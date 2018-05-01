@@ -1,0 +1,29 @@
+install_tool_dependencies: True
+install_repository_dependencies: True
+install_resolver_dependencies: True
+
+tools:
+- name: regex_find_replace
+  owner: jjohnson
+  revisions:
+  - 9ea374bb0350
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: reverse_complement
+  owner: xuebing
+  revisions:
+  - 3af9a3c6aa6f
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - 74a8bef53a00
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: normalize_dataset
+  owner: bebatut
+  revisions:
+  - 72633301cc0d
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
