@@ -20,10 +20,8 @@ Needs some small local fixes
 ### Reference data
 
 - Copy the loc files from the `reference` folder in this repo to Galaxy `tool-data` directory.
+- Edit the file paths as needed
 - Datasets can be found on Zenodo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2539387.svg)](https://doi.org/10.5281/zenodo.2539387)
-
-https://zenodo.org/record/2539387
-
 
 ## Testing
 
