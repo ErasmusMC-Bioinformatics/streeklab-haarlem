@@ -9,7 +9,13 @@ Galaxy version 16.10+ will not load workflow menu in many cases.
 
 Use ephemeris `workflow-to-tools` command to generate tools.yaml file from latest workflow.
 
-- xy-plot tool needs some small local fixes (TODO)
+**xy_plot tool**
+
+Needs some small local fixes
+
+- Replace the tool xml installed via the toolshed with the `xy_plot.xml` file included in this folder.
+- TODO: push change upstream repo and replace tool in workflow
+
 
 ### Reference data
 
