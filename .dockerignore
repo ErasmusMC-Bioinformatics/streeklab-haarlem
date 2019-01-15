@@ -1,3 +1,8 @@
+mycrobiota/reference
+mycrobiota/test-data
+mycrobiota/old
+
+# possible galaxy exports
 export
 hla-typing/export
 jak2-mutation/export
