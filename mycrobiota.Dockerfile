@@ -4,6 +4,11 @@ MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@er
 
 ENV GALAXY_CONFIG_BRAND "Streeklab Mycrobiota"
 
+# Fix conda
+ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
+ENV GALAXY_CONFIG_CONDA_AUTO_INIT "True"
+ENV GALAXY_CONFIG_CONDA_ENSURE_CHANNELS "iuc,conda-forge,bioconda,defaults"
+
 WORKDIR /galaxy-central
 
 ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
