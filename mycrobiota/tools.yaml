@@ -57,12 +57,6 @@ tools:
   - ecb437f1d298
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: ireport
-  owner: saskia-hiltemann
-  revisions:
-  - 42076db43d42
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: transpose
   owner: jmsong
   revisions:
@@ -165,21 +159,21 @@ tools:
   - 1613afce4e28
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://testtoolshed.g2.bx.psu.edu
+- name: mycrobiota
+  owner: erasmus-medical-center
+  revisions:
+  - 607c5e7e0a64
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: mycrobiota
+  owner: erasmus-medical-center
+  revisions:
+  - 607c5e7e0a64
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: mothur_screen_seqs
   owner: iuc
   revisions:
   - 94d8dbac60d8
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mycrobiota
-  owner: erasmus-medical-center
-  revisions:
-  - 607c5e7e0a64
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mycrobiota
-  owner: erasmus-medical-center
-  revisions:
-  - 607c5e7e0a64
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu

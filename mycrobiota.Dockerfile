@@ -1,4 +1,4 @@
-FROM bgruening/galaxy-stable:16.07
+FROM quay.io/shiltemann/galaxy-ireport:16.07
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
