@@ -54,6 +54,8 @@ ADD mycrobiota/reference/mothur_lookup.loc /galaxy-central/tool-data/toolshed.g2
 ADD mycrobiota/reference/mothur_map.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_map.loc
 ADD mycrobiota/reference/mothur_taxonomy.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_taxonomy.loc
 
+ENV GALAXY_CONFIG_CLEANUP_JOB "onsuccess"
+
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 
 EXPOSE :80
