@@ -25,7 +25,7 @@ Needs some small local fixes
 
 ## Testing
 
-Test datasets in folder `test-data`. Make a single list of pairs collection in Galaxy with all the test files. Do not change the input file names, the naming scheme is important (`<sample name>_replicate[0-9]+_.*_R[12]_.*\.fastq`, match pairs with `\d+_replicate\d+_S\d+_L001_R1_001.fastq` and `\d+_replicate\d+_S\d+_L001_R2_001.fastq`)
+Test datasets in folder `test-data`. Make a single list of pairs collection in Galaxy with all the test files. Do not change the input file names, the naming scheme is important (`<sample name>_replicate[0-9]+_.*_R[12]_.*\.fastq`, match pairs with `_R1` and `_R2`)
 
 Workflow variables:
 
