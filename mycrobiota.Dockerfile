@@ -44,8 +44,8 @@ ADD mycrobiota/zenodo/silva.nr_v119.tax /galaxy-central/tool-data/data/silva.nr_
 ADD mycrobiota/zenodo/silva.nr_v123.Bogaert.align /galaxy-central/tool-data/data/silva.nr_v123.Bogaert.align
 ADD mycrobiota/zenodo/silva.nr_v123.Bogaert.tax /galaxy-central/tool-data/data/silva.nr_v123.Bogaert.tax
 ADD mycrobiota/zenodo/silva.nr_v123.V4.tax /galaxy-central/tool-data/data/silva.nr_v123.V4.tax
-ADD mycrobiota/zenodo/files/silva.nr_v123.V4pcr.align /galaxy-central/tool-data/data/silva.nr_v123.V4pcr.align
-ADD mycrobiota/zenodo/files/silva.v4.fasta /galaxy-central/tool-data/data/silva.v4.fasta/silva.v4.fasta
+ADD mycrobiota/zenodo/silva.nr_v123.V4pcr.align /galaxy-central/tool-data/data/silva.nr_v123.V4pcr.align
+ADD mycrobiota/zenodo/silva.v4.fasta /galaxy-central/tool-data/data/silva.v4.fasta/silva.v4.fasta
 
 ENV TERM "xterm"
 
@@ -53,6 +53,8 @@ ADD mycrobiota/reference/mothur_aligndb.loc /galaxy-central/tool-data/toolshed.g
 ADD mycrobiota/reference/mothur_lookup.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_lookup.loc
 ADD mycrobiota/reference/mothur_map.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_map.loc
 ADD mycrobiota/reference/mothur_taxonomy.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_taxonomy.loc
+
+ENV GALAXY_CONFIG_CLEANUP_JOB "onsuccess"
 
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 
