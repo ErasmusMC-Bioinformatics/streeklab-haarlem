@@ -19,3 +19,5 @@ workflow-install --publish_workflows \
                  -u $GALAXY_DEFAULT_ADMIN_USER \
                  -p $GALAXY_DEFAULT_ADMIN_PASSWORD
 
+echo "installed workflows:"
+ls $GALAXY_HOME/workflows/

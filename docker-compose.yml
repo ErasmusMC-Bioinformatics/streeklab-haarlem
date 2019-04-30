@@ -8,7 +8,7 @@ services:
     volumes:
       - /home/user/galaxy_storage/:/export/
     environment:
-      - "GALAXY_CONFIG_BRAND=\"Streeklab HLA-JAK2\""
+      - "GALAXY_CONFIG_BRAND=Streeklab HLA-JAK2"
 
   mycrobiota:
     image: quay.io/erasmusmc_bioinformatics/streeklab-haarlem-galaxy-mycrobiota
@@ -18,5 +18,5 @@ services:
     volumes:
       - /home/user/galaxy_storage_mycrobiota/:/export/
     environment:
-      - "GALAXY_CONFIG_BRAND=\"Streeklab MYcrobiota\""
+      - "GALAXY_CONFIG_BRAND=Streeklab MYcrobiota"
 

@@ -39,7 +39,7 @@ The docker-compose file can be customized to your needs, for example to specify 
 
 ```yml
     ports:
-      - 4243:80
+      - 8081:80
 ```
 
 Change the first number to the port you wish to run the image on
@@ -62,7 +62,7 @@ environment:
   - "GALAXY_CONFIG_BRAND=MYcrobiota"
 ```
 
-This environment variable sets the branding for the home page. All other options in the [Galaxy config file](https://github.com/galaxyproject/galaxy/blob/dev/config/galaxy.yml.sample#L671) can be set in this way (append `GALAXY_BRAND_` to the name of the setting in the galaxy.yml file).
+This environment variable sets the branding for the home page. All other options in the [Galaxy config file](https://github.com/galaxyproject/galaxy/blob/dev/config/galaxy.yml.sample#L671) can be set in this way (prepend `GALAXY_BRAND_` to the name of the setting in the galaxy.yml file to get the corresponding environment variable name).
 
 More information can be found at the [docker-galaxy-stable](https://github.com/bgruening/docker-galaxy-stable) repository.
 
