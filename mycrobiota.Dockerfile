@@ -2,7 +2,7 @@ FROM quay.io/shiltemann/galaxy-ireport:16.07
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
-ENV GALAXY_CONFIG_BRAND "Streeklab Mycrobiota"
+ENV GALAXY_CONFIG_BRAND "Streeklab MYcrobiota"
 
 # Fix conda
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
