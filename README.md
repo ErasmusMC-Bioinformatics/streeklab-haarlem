@@ -17,11 +17,21 @@ To run both Galaxy servers (MYcrobiota and HLA/JAK2):
 docker-compose up
 ```
 
-This will automatically pull the required images from quay.io, and run the two Galaxy servers on port 8080 and 8081 (but this can be customized, see next section).
+This will automatically pull the required images from quay.io, and run the two Galaxy servers on port 8080 and 8081 (but this can be customized, see later section).
 
-Both Galaxy's have been configured with an admin user with credentials `admin@galaxy.org:admin`
+### Updating the Galaxy Servers
 
-### Customizing
+Every time a change is made in this github repository, a new docker image is built on quay.io. To fetch the latest images, use:
+
+```
+docker-compose pull
+```
+
+### Accessing Galaxy
+
+After running docker compose, you can access Galaxy by pointing your browser to `localhost:8080` and `localhost:8081`. Both Galaxy's have been configured with an admin user with credentials `admin@galaxy.org:admin`
+
+### Customizing Galaxy Settings
 
 The docker-compose file can be customized to your needs, for example to specify the ports for each Galaxy server to run on, or the location to store the data and database.
 
