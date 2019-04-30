@@ -35,8 +35,6 @@ After running docker compose, you can access Galaxy by pointing your browser to 
 
 The docker-compose file can be customized to your needs, for example to specify the ports for each Galaxy server to run on, or the location to store the data and database.
 
-Config settings for Galaxy itself can be passed as environment variables, more information can be found at the [docker-galaxy-stable](https://github.com/bgruening/docker-galaxy-stable) repository.
-
 #### Change ports
 
 ```yml
@@ -55,14 +53,34 @@ Change the first number to the port you wish to run the image on
 
 change the part before the `:` to the location on your system you want the Galaxy files to be stored.
 
-## Docker build
+#### Changing Galaxy settings
 
-Build the MycroBiota galaxy with:
+Config settings for Galaxy itself can be passed as environment variables in the docker compose file, by adding a section like
+
+```yml
+environment:
+  - "GALAXY_CONFIG_BRAND=MYcrobiota"
+```
+
+This environment variable sets the branding for the home page. All other options in the [Galaxy config file](https://github.com/galaxyproject/galaxy/blob/dev/config/galaxy.yml.sample#L671) can be set in this way (append `GALAXY_BRAND_` to the name of the setting in the galaxy.yml file).
+
+More information can be found at the [docker-galaxy-stable](https://github.com/bgruening/docker-galaxy-stable) repository.
+
+
+## Building the Docker images locally
+
+To update the images, simply make changes in this repository, and images will be automatically be rebuilt on quay.
+
+But if you would like to build the images locally (e.g. for testing changes), you can do so by running the following commands:
+
+Build the MYcrobiota Galaxy with:
+
 ```
 docker build -t mycrobiota-galaxy -f mycrobiota.Dockerfile .
 ```
 
-Build the HLA-JAK2 galaxy with:
+Build the HLA-JAK2 Galaxy with:
+
 ```
 docker build -t hla-jak2-galaxy -f hla-jak2.Dockerfile .
 ```
