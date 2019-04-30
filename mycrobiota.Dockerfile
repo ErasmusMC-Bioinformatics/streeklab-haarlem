@@ -2,7 +2,7 @@ FROM quay.io/shiltemann/galaxy-ireport:16.07
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
-ENV GALAXY_CONFIG_BRAND "Streeklab MYcrobiota"
+ENV GALAXY_CONFIG_BRAND "MYcrobiota"
 
 # Fix conda
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
@@ -11,15 +11,28 @@ ENV GALAXY_CONFIG_CONDA_ENSURE_CHANNELS "iuc,conda-forge,bioconda,defaults"
 
 WORKDIR /galaxy-central
 
+# Install Tools
 ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
 
+## manually install these ones
 ADD mycrobiota/xy_plot_tool/xy_plot.xml /shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/ecb437f1d298/xy_plot/xy_plot.xml
 ADD mycrobiota/xy_plot_tool/r_wrapper.sh /shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/ecb437f1d298/xy_plot/r_wrapper.sh
 
+
+# Install workflows
+ADD mycrobiota/workflows $GALAXY_HOME/workflows/
+ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
+RUN pip install --upgrade ephemeris
+RUN $GALAXY_HOME/install-workflows.sh
+
+
+# Reference Data
+## copy loc file
 ADD mycrobiota/reference/*.loc /galaxy-central/tool-data/
 RUN mkdir /galaxy-central/tool-data/data/
 
+## download reference data from zenodo
 ADD https://zenodo.org/record/2539387/files/HMP_silva.v35.pcr.align /galaxy-central/tool-data/data/HMP_silva.v35.pcr.align
 ADD https://zenodo.org/record/2539387/files/HMP_silva.v53.pcr.align /galaxy-central/tool-data/data/HMP_silva.v53.pcr.align
 ADD https://zenodo.org/record/2539387/files/HMPv3-v5_1369-1368 /galaxy-central/tool-data/data/HMPv3-v5_1369-1368
