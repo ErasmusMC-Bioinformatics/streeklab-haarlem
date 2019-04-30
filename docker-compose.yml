@@ -1,0 +1,15 @@
+version: '3'
+services:
+  galaxy:
+    image: quay.io/erasmusmc_bioinformatics/streeklab-haarlem-galaxy
+    ports:
+      - 4242:80
+    volumes:
+      - /home/user/galaxy_storage/:/export/
+  mycrobiota:
+    image: quay.io/erasmusmc_bioinformatics/streeklab-haarlem-galaxy-mycrobiota
+    ports:
+      - 4243:80
+    volumes:
+      - /home/user/galaxy_storage_mycrobiota/:/export/
+
