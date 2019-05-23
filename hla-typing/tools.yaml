@@ -3,6 +3,61 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
+- name: ireport
+  owner: saskia-hiltemann
+  revisions:
+  - 42076db43d42
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: normalize_dataset
+  owner: bebatut
+  revisions:
+  - 72633301cc0d
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: pear
+  owner: iuc
+  revisions:
+  - 581e52f03c5d
+  - 2f804526f5fd
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: cutadapt
+  owner: lparsons
+  revisions:
+  - 8665bcc8b847
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: ncbi_blast_plus
+  owner: devteam
+  revisions:
+  - 6f386c5dc4fb
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: split_pairs
+  owner: erasmus-medical-center
+  revisions:
+  - 7c48290ad757
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: hla_dq
+  owner: erasmus-medical-center
+  revisions:
+  - 4fc47a3ff9e8
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: pear
+  owner: iuc
+  revisions:
+  - 2f804526f5fd
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - 74a8bef53a00
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: text_processing
   owner: bgruening
   revisions:
