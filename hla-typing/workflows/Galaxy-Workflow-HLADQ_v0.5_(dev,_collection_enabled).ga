@@ -83,7 +83,7 @@
         }, 
         "2": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.0", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.1", 
             "errors": null, 
             "id": 2, 
             "input_connections": {
@@ -144,15 +144,15 @@
                     "output_name": "unassembled_reverse_reads"
                 }
             }, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.0", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.1", 
             "tool_shed_repository": {
-                "changeset_revision": "581e52f03c5d", 
+                "changeset_revision": "2f804526f5fd", 
                 "name": "pear", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
             "tool_state": "{\"max_uncalled_base\": \"\\\"1.0\\\"\", \"__page__\": null, \"quality_threshold\": \"\\\"0\\\"\", \"empirical_freqs\": \"\\\"false\\\"\", \"nbase\": \"\\\"false\\\"\", \"outputs\": \"[\\\"assembled\\\"]\", \"__rerun_remap_job_id__\": null, \"cap\": \"\\\"40\\\"\", \"test_method\": \"\\\"1\\\"\", \"library\": \"{\\\"type\\\": \\\"paired_collection\\\", \\\"__current_case__\\\": 1, \\\"input_collection\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"min_trim_length\": \"\\\"1\\\"\", \"min_overlap\": \"\\\"0\\\"\", \"score_method\": \"\\\"2\\\"\", \"max_assembly_length\": \"\\\"0\\\"\", \"min_assembly_length\": \"\\\"50\\\"\", \"pvalue\": \"\\\"1.0\\\"\"}", 
-            "tool_version": "0.9.6.0", 
+            "tool_version": "0.9.6.1", 
             "type": "tool", 
             "uuid": "28bd571c-4168-466a-8bed-a91663cd0cfa", 
             "workflow_outputs": []

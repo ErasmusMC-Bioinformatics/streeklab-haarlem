@@ -18,7 +18,6 @@ tools:
 - name: pear
   owner: iuc
   revisions:
-  - 581e52f03c5d
   - 2f804526f5fd
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
@@ -26,12 +25,6 @@ tools:
   owner: lparsons
   revisions:
   - 8665bcc8b847
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: ncbi_blast_plus
-  owner: devteam
-  revisions:
-  - 6f386c5dc4fb
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: split_pairs
@@ -46,10 +39,10 @@ tools:
   - 4fc47a3ff9e8
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: pear
-  owner: iuc
+- name: ncbi_blast_plus
+  owner: devteam
   revisions:
-  - 2f804526f5fd
+  - 6f386c5dc4fb
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: text_processing
