@@ -13,27 +13,28 @@ Images are available on [Quay.io](https://quay.io)
 
 To run both Galaxy servers (MYcrobiota and HLA/JAK2):
 
+Clone this repository:
+
+```bash
+git clone git@github.com:ErasmusMC-Bioinformatics/streeklab-haarlem.git
+cd  streeklab-haarem
 ```
+
+Run docker-compose:
+
+```bash
 docker-compose up
 ```
 
 This will automatically pull the required images from quay.io, and run the two Galaxy servers on port 8080 and 8081 (but this can be customized, see later section).
 
-### Updating the Galaxy Servers
-
-Every time a change is made in this github repository, a new docker image is built on quay.io. To fetch the latest images, use:
-
-```
-docker-compose pull
-```
-
 ### Accessing Galaxy
 
 After running docker compose, you can access Galaxy by pointing your browser to `localhost:8080` and `localhost:8081`. Both Galaxy's have been configured with an admin user with credentials `admin@galaxy.org:admin`
 
-### Customizing Galaxy Settings
+### Customizing Docker and Galaxy Settings
 
-The docker-compose file can be customized to your needs, for example to specify the ports for each Galaxy server to run on, or the location to store the data and database.
+The `docker-compose.yml` file can be customized to your needs, for example to specify the ports for each Galaxy server to run on, or the location to store the data and database.
 
 #### Change ports
 
@@ -67,7 +68,15 @@ This environment variable sets the branding for the home page. All other options
 More information can be found at the [docker-galaxy-stable](https://github.com/bgruening/docker-galaxy-stable) repository.
 
 
-## Building the Docker images locally
+### Updating the Galaxy Servers
+
+Every time a change is made in this github repository, a new docker image is built on quay.io. To fetch the latest images, use:
+
+```
+docker-compose pull
+```
+
+## Building the Docker images locally [only for development]
 
 To update the images, simply make changes in this repository, and images will be automatically be rebuilt on quay.
 
