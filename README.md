@@ -4,7 +4,7 @@ Galaxy workflows created for projects in collaboration with Streeklab Haarlem
 
 # Quay.io
 
-Images are available on [Quay.io](https://quay.io)
+Images are available on [Quay.io](https://quay.io) (to check status, installation instructions given below)
 
 - [MYcrobiota Galaxy](https://quay.io/repository/erasmusmc_bioinformatics/streeklab-haarlem-galaxy-mycrobiota)
 - [HLA/JAK2 Galaxy](https://quay.io/repository/erasmusmc_bioinformatics/streeklab-haarlem-galaxy)
