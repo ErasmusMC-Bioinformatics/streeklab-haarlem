@@ -14,22 +14,26 @@ Images are available on [Quay.io](https://quay.io) (to check status and info; se
 
 To run both Galaxy servers (MYcrobiota and HLA/JAK2):
 
-Install Docker according to the installation instructions for your server: [Docker Docs](https://docs.docker.com/)
+1. Install Docker according to the installation instructions for your server: [Docker Docs](https://docs.docker.com/)
+2. Next, clone this repository:
+   ```bash
+   git clone git@github.com:ErasmusMC-Bioinformatics/streeklab-haarlem.git
+   cd  streeklab-haarem
+   ```
+3. Run docker-compose (from the cloned github directory):
+   ```bash
+   docker-compose up
+   ```
+   This will automatically pull the required images from quay.io, and run the two Galaxy servers on port 8080 and 8081 (but this can be customized, see later section).
+4. Open a browser
+P.S. Als je voor die tijd toch nog verder wilt proberen te geraken: De vervolgstappen staan beschreven in de README op GitHub, en zijn:
 
-Next, clone this repository:
+1) Installeer Docker op de machine die de applicatie gaat hosten (instructies voor verschillende OSen op https://docs.docker.com/)
+2) Kloon de GitHub repo (ben je bekend met git/GitHub?)
+3) Run het commando "docker-compose up" vanuit de gekloonde GitHub repo
+4) browser openen en naar localhost:8080 en localhost:8081 gaan
 
-```bash
-git clone git@github.com:ErasmusMC-Bioinformatics/streeklab-haarlem.git
-cd  streeklab-haarem
-```
-
-Run docker-compose:
-
-```bash
-docker-compose up
-```
-
-This will automatically pull the required images from quay.io, and run the two Galaxy servers on port 8080 and 8081 (but this can be customized, see later section).
+Bij welke stap gaat het precies mis?  and navigate to `localhost:8080` and `localhost:8081`
 
 ### Accessing Galaxy
 
