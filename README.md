@@ -9,11 +9,14 @@ Images are available on [Quay.io](https://quay.io)
 - [MYcrobiota Galaxy](https://quay.io/repository/erasmusmc_bioinformatics/streeklab-haarlem-galaxy-mycrobiota)
 - [HLA/JAK2 Galaxy](https://quay.io/repository/erasmusmc_bioinformatics/streeklab-haarlem-galaxy)
 
+
 ## Running Galaxy Servers
 
 To run both Galaxy servers (MYcrobiota and HLA/JAK2):
 
-Clone this repository:
+Install Docker according to the installation instructions for your server: [Docker Docs](https://docs.docker.com/)
+
+Next, clone this repository:
 
 ```bash
 git clone git@github.com:ErasmusMC-Bioinformatics/streeklab-haarlem.git
