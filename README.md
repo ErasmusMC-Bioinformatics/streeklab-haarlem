@@ -17,7 +17,7 @@ To run both Galaxy servers (MYcrobiota and HLA/JAK2):
 1. Install Docker according to the installation instructions for your server: [Docker Docs](https://docs.docker.com/)
 2. Next, clone this GitHub repository:
    ```bash
-   git clone git@github.com:ErasmusMC-Bioinformatics/streeklab-haarlem.git   
+   git clone https://github.com/ErasmusMC-Bioinformatics/streeklab-haarlem.git
    ```
 3. Run docker-compose (from the cloned github directory):
    ```bash
