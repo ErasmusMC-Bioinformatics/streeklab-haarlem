@@ -6,7 +6,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - /home/user/galaxy_storage/:/export/
+      - /root/streeklab/galaxy_storage/:/export/
     environment:
       - "GALAXY_CONFIG_BRAND=Streeklab HLA-JAK2"
 
@@ -16,7 +16,7 @@ services:
     ports:
       - 8081:80
     volumes:
-      - /home/user/galaxy_storage_mycrobiota/:/export/
+      - /root/streeklab/galaxy_storage_mycrobiota/:/export/
     environment:
       - "GALAXY_CONFIG_BRAND=Streeklab MYcrobiota"
 

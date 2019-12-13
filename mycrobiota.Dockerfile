@@ -11,20 +11,24 @@ ENV GALAXY_CONFIG_CONDA_ENSURE_CHANNELS "iuc,conda-forge,bioconda,defaults"
 
 WORKDIR /galaxy-central
 
+# Install workflows
+RUN pip install --upgrade ephemeris
+
+ADD mycrobiota/workflows $GALAXY_HOME/workflows/
+RUN workflow-to-tools --output-file $GALAXY_ROOT/tools.yaml --panel_label workflow-tools --workflow `ls -p -d $GALAXY_HOME/workflows/* | grep -v -E "/$" | tr '\n' ' '`
+
+ADD install-tools.sh $GALAXY_HOME/install-tools.sh
+RUN $GALAXY_HOME/install-tools.sh
+
 # Install Tools
-ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
-RUN install-tools $GALAXY_ROOT/tools.yaml
+ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
+RUN $GALAXY_HOME/install-workflows.sh
 
 ## manually install these ones
 ADD mycrobiota/xy_plot_tool/xy_plot.xml /shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/ecb437f1d298/xy_plot/xy_plot.xml
 ADD mycrobiota/xy_plot_tool/r_wrapper.sh /shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/ecb437f1d298/xy_plot/r_wrapper.sh
 
 
-# Install workflows
-ADD mycrobiota/workflows $GALAXY_HOME/workflows/
-ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
-RUN pip install --upgrade ephemeris
-RUN $GALAXY_HOME/install-workflows.sh
 
 
 # Reference Data
