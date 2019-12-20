@@ -2819,7 +2819,7 @@
     },
     "28": {
       "annotation": "",
-      "content_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
       "id": 28,
       "input_connections": {
         "input_collection": {
@@ -2869,12 +2869,12 @@
         }
       },
       "tool_errors": null,
-      "tool_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
       "tool_shed_repository": {
-        "changeset_revision": "1613afce4e28",
+        "changeset_revision": "c46360dcbf3f",
         "name": "extract_element_from_collection",
         "owner": "erasmus-medical-center",
-        "tool_shed": "testtoolshed.g2.bx.psu.edu"
+        "tool_shed": "toolshed.g2.bx.psu.edu"
       },
       "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"${level}\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
       "tool_version": "0.1",
@@ -2884,7 +2884,7 @@
     },
     "29": {
       "annotation": "",
-      "content_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
       "id": 29,
       "input_connections": {
         "input_collection": {
@@ -2934,12 +2934,12 @@
         }
       },
       "tool_errors": null,
-      "tool_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
       "tool_shed_repository": {
-        "changeset_revision": "1613afce4e28",
+        "changeset_revision": "c46360dcbf3f",
         "name": "extract_element_from_collection",
         "owner": "erasmus-medical-center",
-        "tool_shed": "testtoolshed.g2.bx.psu.edu"
+        "tool_shed": "toolshed.g2.bx.psu.edu"
       },
       "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"${level}\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
       "tool_version": "0.1",
@@ -3559,7 +3559,7 @@
     },
     "40": {
       "annotation": "",
-      "content_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
       "id": 40,
       "input_connections": {
         "input_collection": {
@@ -3609,12 +3609,12 @@
         }
       },
       "tool_errors": null,
-      "tool_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
       "tool_shed_repository": {
-        "changeset_revision": "1613afce4e28",
+        "changeset_revision": "c46360dcbf3f",
         "name": "extract_element_from_collection",
         "owner": "erasmus-medical-center",
-        "tool_shed": "testtoolshed.g2.bx.psu.edu"
+        "tool_shed": "toolshed.g2.bx.psu.edu"
       },
       "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"sobs\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
       "tool_version": "0.1",
