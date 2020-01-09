@@ -1,0 +1,4008 @@
+{
+  "a_galaxy_workflow": "true",
+  "annotation": "Oscillatoria, mothur 1.39.5",
+  "format-version": "0.1",
+  "name": "MYcrobiota v1.4 - IC Oscillatoria, subsample 20.000, mothur v1.39.5 [October 2019]'",
+  "steps": {
+    "0": {
+      "annotation": "",
+      "content_id": null,
+      "id": 0,
+      "input_connections": {},
+      "inputs": [
+        {
+          "description": "",
+          "name": "Input Fasta Pairs"
+        }
+      ],
+      "label": null,
+      "name": "Input dataset collection",
+      "outputs": [],
+      "position": {
+        "left": 200,
+        "top": 772
+      },
+      "tool_errors": null,
+      "tool_id": null,
+      "tool_state": "{\"collection_type\": \"list:paired\", \"name\": \"Input Fasta Pairs\"}",
+      "tool_version": null,
+      "type": "data_collection_input",
+      "uuid": "abbef87d-ea6d-439c-bee0-d5f1c890d4b3",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "output",
+          "uuid": "97a395f8-6e7a-4e0a-8afb-4cee6d73a759"
+        }
+      ]
+    },
+    "1": {
+      "annotation": "",
+      "content_id": null,
+      "id": 1,
+      "input_connections": {},
+      "inputs": [
+        {
+          "description": "",
+          "name": "Oligos"
+        }
+      ],
+      "label": null,
+      "name": "Input dataset",
+      "outputs": [],
+      "position": {
+        "left": 214.5,
+        "top": 989
+      },
+      "tool_errors": null,
+      "tool_id": null,
+      "tool_state": "{\"name\": \"Oligos\"}",
+      "tool_version": null,
+      "type": "data_input",
+      "uuid": "4d21238f-f362-4c2b-8c46-fdc3d994d8e1",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "output",
+          "uuid": "b827e3c6-fc9f-496c-8f49-b50fd6ce0928"
+        }
+      ]
+    },
+    "2": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_contigs/mothur_make_contigs/1.39.5.0",
+      "id": 2,
+      "input_connections": {
+        "input_type|list_paired_collection": {
+          "id": 0,
+          "output_name": "output"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Make.contigs",
+          "name": "input_type"
+        }
+      ],
+      "label": null,
+      "name": "Make.contigs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta",
+          "type": "fasta"
+        },
+        {
+          "name": "qual",
+          "type": "qual"
+        },
+        {
+          "name": "scrapfasta",
+          "type": "fasta"
+        },
+        {
+          "name": "scrapqual",
+          "type": "qual"
+        },
+        {
+          "name": "report",
+          "type": "txt"
+        },
+        {
+          "name": "group",
+          "type": "mothur.groups"
+        }
+      ],
+      "position": {
+        "left": 514.5,
+        "top": 717
+      },
+      "post_job_actions": {
+        "HideDatasetActionfasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta"
+        },
+        "HideDatasetActiongroup": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "group"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionqual": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "qual"
+        },
+        "HideDatasetActionreport": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "report"
+        },
+        "HideDatasetActionscrapfasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "scrapfasta"
+        },
+        "HideDatasetActionscrapqual": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "scrapqual"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_contigs/mothur_make_contigs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "4b72b6c43327",
+        "name": "mothur_make_contigs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"rename\": \"\\\"true\\\"\", \"oligo\": \"{\\\"add\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"__page__\": 0, \"input_type\": \"{\\\"type\\\": \\\"list_collection\\\", \\\"list_paired_collection\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2}\", \"align\": \"\\\"needleman\\\"\", \"gapopen\": \"\\\"-2\\\"\", \"mismatch\": \"\\\"-1\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"gapextend\": \"\\\"-1\\\"\", \"match\": \"\\\"1\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "c1abaddf-a5c5-42e5-b3ff-95c2c92a3994",
+      "workflow_outputs": []
+    },
+    "3": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_sub_sample/mothur_sub_sample/1.39.5.0",
+      "id": 3,
+      "input_connections": {
+        "input|otu": {
+          "id": 2,
+          "output_name": "fasta"
+        },
+        "input|use_group|group_in": {
+          "id": 2,
+          "output_name": "group"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Sub.sample",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Sub.sample",
+          "name": "input"
+        },
+        {
+          "description": "runtime parameter for tool Sub.sample",
+          "name": "input"
+        },
+        {
+          "description": "runtime parameter for tool Sub.sample",
+          "name": "taxonomy"
+        }
+      ],
+      "label": null,
+      "name": "Sub.sample",
+      "outputs": [
+        {
+          "name": "list_out",
+          "type": "input"
+        },
+        {
+          "name": "shared_out",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "taxonomy_out",
+          "type": "input"
+        },
+        {
+          "name": "sabund_out",
+          "type": "mothur.sabund"
+        },
+        {
+          "name": "rabund_out",
+          "type": "mothur.rabund"
+        },
+        {
+          "name": "names_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "group_out",
+          "type": "mothur.groups"
+        },
+        {
+          "name": "count_out",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 888.5,
+        "top": 691
+      },
+      "post_job_actions": {
+        "HideDatasetActioncount_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "count_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActiongroup_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "group_out"
+        },
+        "HideDatasetActionlist_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "list_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionnames_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "names_out"
+        },
+        "HideDatasetActionrabund_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "rabund_out"
+        },
+        "HideDatasetActionsabund_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "sabund_out"
+        },
+        "HideDatasetActionshared_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "shared_out"
+        },
+        "HideDatasetActiontaxonomy_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "taxonomy_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_sub_sample/mothur_sub_sample/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "34e1fbd32a04",
+        "name": "mothur_sub_sample",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"input\": \"{\\\"name_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"use_group\\\": {\\\"groups\\\": null, \\\"group_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"to_filter\\\": \\\"yes\\\", \\\"__current_case__\\\": 1, \\\"persample\\\": \\\"true\\\"}, \\\"otu\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"format\\\": \\\"fasta\\\"}\", \"size\": \"\\\"20000\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "71818288-be2e-4e64-9ffb-8949f63ecbba",
+      "workflow_outputs": []
+    },
+    "4": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota_subsample_add_discarded_samples/0.1",
+      "id": 4,
+      "input_connections": {
+        "in_fasta": {
+          "id": 2,
+          "output_name": "fasta"
+        },
+        "in_fasta_subsampled": {
+          "id": 3,
+          "output_name": "fasta_out"
+        },
+        "in_group": {
+          "id": 2,
+          "output_name": "group"
+        },
+        "in_group_subsampled": {
+          "id": 3,
+          "output_name": "group_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Recover samples",
+          "name": "in_fasta_subsampled"
+        },
+        {
+          "description": "runtime parameter for tool Recover samples",
+          "name": "in_group"
+        },
+        {
+          "description": "runtime parameter for tool Recover samples",
+          "name": "in_group_subsampled"
+        },
+        {
+          "description": "runtime parameter for tool Recover samples",
+          "name": "in_fasta"
+        }
+      ],
+      "label": null,
+      "name": "Recover samples",
+      "outputs": [
+        {
+          "name": "out_fasta",
+          "type": "fasta"
+        },
+        {
+          "name": "out_group",
+          "type": "mothur.groups"
+        }
+      ],
+      "position": {
+        "left": 1327.5,
+        "top": 680
+      },
+      "post_job_actions": {
+        "HideDatasetActionout_fasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_fasta"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota_subsample_add_discarded_samples/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"in_group\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_group_subsampled\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_fasta_subsampled\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"in_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"threshold\": \"\\\"20000\\\"\"}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "dd983119-5764-4e33-851d-6e5e6232f34e",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "out_group",
+          "uuid": "5bc1a7a2-2344-40fb-9a28-e28754bca6bc"
+        }
+      ]
+    },
+    "5": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0",
+      "id": 5,
+      "input_connections": {
+        "fasta": {
+          "id": 4,
+          "output_name": "out_fasta"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Unique.seqs",
+          "name": "fasta"
+        },
+        {
+          "description": "runtime parameter for tool Unique.seqs",
+          "name": "names"
+        }
+      ],
+      "label": null,
+      "name": "Unique.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "out_fasta",
+          "type": "input"
+        },
+        {
+          "name": "out_names",
+          "type": "mothur.names"
+        },
+        {
+          "name": "out_count",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 1677.5,
+        "top": 524
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionout_count": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_count"
+        },
+        "HideDatasetActionout_fasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_fasta"
+        },
+        "HideDatasetActionout_names": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_names"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "7c3f9c0850ac",
+        "name": "mothur_unique_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"format\": \"\\\"name\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "538c97c9-1339-4ba7-8a0d-d9378df88b72",
+      "workflow_outputs": []
+    },
+    "6": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_count_seqs/mothur_count_seqs/1.39.5.0",
+      "id": 6,
+      "input_connections": {
+        "grouping|group": {
+          "id": 4,
+          "output_name": "out_group"
+        },
+        "name": {
+          "id": 5,
+          "output_name": "out_names"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Count.seqs",
+          "name": "name"
+        },
+        {
+          "description": "runtime parameter for tool Count.seqs",
+          "name": "grouping"
+        }
+      ],
+      "label": null,
+      "name": "Count.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "seq_count",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 1878.5,
+        "top": 880
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionseq_count": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "seq_count"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_count_seqs/mothur_count_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "f00841c6fc14",
+        "name": "mothur_count_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"grouping\": \"{\\\"use\\\": \\\"yes\\\", \\\"group\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"groups\\\": null, \\\"__current_case__\\\": 0}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "b70c0424-111c-4de4-91b7-202df2292d39",
+      "workflow_outputs": []
+    },
+    "7": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_trim_seqs/mothur_trim_seqs/1.39.5.0",
+      "id": 7,
+      "input_connections": {
+        "fasta": {
+          "id": 5,
+          "output_name": "out_fasta"
+        },
+        "names": {
+          "id": 5,
+          "output_name": "out_names"
+        },
+        "oligo|oligos": {
+          "id": 1,
+          "output_name": "output"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Trim.seqs",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Trim.seqs",
+          "name": "oligo"
+        },
+        {
+          "description": "runtime parameter for tool Trim.seqs",
+          "name": "names"
+        },
+        {
+          "description": "runtime parameter for tool Trim.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Trim.seqs",
+      "outputs": [
+        {
+          "name": "fasta_allfiles",
+          "type": "input"
+        },
+        {
+          "name": "groups_allfiles",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "trim_fasta",
+          "type": "input"
+        },
+        {
+          "name": "scrap_fasta",
+          "type": "input"
+        },
+        {
+          "name": "trim_names",
+          "type": "mothur.names"
+        },
+        {
+          "name": "scrap_names",
+          "type": "mothur.names"
+        },
+        {
+          "name": "trim_count",
+          "type": "mothur.count_table"
+        },
+        {
+          "name": "scrap_count",
+          "type": "mothur.count_table"
+        },
+        {
+          "name": "trim_qual",
+          "type": "input"
+        },
+        {
+          "name": "scrap_qual",
+          "type": "input"
+        },
+        {
+          "name": "groups_file",
+          "type": "mothur.groups"
+        }
+      ],
+      "position": {
+        "left": 2210.5,
+        "top": 791
+      },
+      "post_job_actions": {
+        "HideDatasetActionfasta_allfiles": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_allfiles"
+        },
+        "HideDatasetActiongroups_allfiles": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "groups_allfiles"
+        },
+        "HideDatasetActiongroups_file": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "groups_file"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionscrap_count": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "scrap_count"
+        },
+        "HideDatasetActionscrap_names": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "scrap_names"
+        },
+        "HideDatasetActionscrap_qual": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "scrap_qual"
+        },
+        "HideDatasetActiontrim_count": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "trim_count"
+        },
+        "HideDatasetActiontrim_fasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "trim_fasta"
+        },
+        "HideDatasetActiontrim_names": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "trim_names"
+        },
+        "HideDatasetActiontrim_qual": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "trim_qual"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_trim_seqs/mothur_trim_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "c49a6454726c",
+        "name": "mothur_trim_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"oligo\": \"{\\\"bdiffs\\\": \\\"0\\\", \\\"sdiffs\\\": \\\"0\\\", \\\"allfiles\\\": \\\"false\\\", \\\"ldiffs\\\": \\\"0\\\", \\\"pdiffs\\\": \\\"0\\\", \\\"tdiffs\\\": \\\"0\\\", \\\"keepforward\\\": \\\"false\\\", \\\"add\\\": \\\"yes\\\", \\\"__current_case__\\\": 1, \\\"oligos\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__page__\": 0, \"logtransform\": \"\\\"false\\\"\", \"checkorient\": \"\\\"false\\\"\", \"minlength\": \"\\\"0\\\"\", \"__rerun_remap_job_id__\": null, \"maxhomop\": \"\\\"0\\\"\", \"flip\": \"\\\"false\\\"\", \"qual\": \"{\\\"add2\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"removelast\": \"\\\"0\\\"\", \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"maxlength\": \"\\\"0\\\"\", \"maxambig\": \"\\\"-1\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"keepfirst\": \"\\\"0\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "d6d2a4e8-4eeb-4f6e-8696-bc9ed284b4d1",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "scrap_fasta",
+          "uuid": "ea92ca9d-fd93-4285-a85a-39fb52d8a40b"
+        }
+      ]
+    },
+    "8": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_list_seqs/mothur_list_seqs/1.39.5.0",
+      "id": 8,
+      "input_connections": {
+        "search|input": {
+          "id": 7,
+          "output_name": "scrap_names"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool List.seqs",
+          "name": "search"
+        }
+      ],
+      "label": null,
+      "name": "List.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "accnos",
+          "type": "mothur.accnos"
+        }
+      ],
+      "position": {
+        "left": 2136.5,
+        "top": 314
+      },
+      "post_job_actions": {
+        "HideDatasetActionaccnos": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "accnos"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_list_seqs/mothur_list_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "ea1a32c7927e",
+        "name": "mothur_list_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"search\": \"{\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"intype\\\": \\\"name\\\", \\\"__current_case__\\\": 2}\", \"savelog\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "620bbb16-824a-4d96-bae4-a1487d11c76c",
+      "workflow_outputs": []
+    },
+    "9": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0",
+      "id": 9,
+      "input_connections": {
+        "accnos": {
+          "id": 8,
+          "output_name": "accnos"
+        },
+        "count_in": {
+          "id": 6,
+          "output_name": "seq_count"
+        },
+        "fasta_in": {
+          "id": 5,
+          "output_name": "out_fasta"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "qfile_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "fasta_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "count_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "group_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "taxonomy_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "accnos"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "alignreport_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "fastq_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "list_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "name_in"
+        }
+      ],
+      "label": null,
+      "name": "Remove.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "fastq_out",
+          "type": "input"
+        },
+        {
+          "name": "count_out",
+          "type": "input"
+        },
+        {
+          "name": "qfile_out",
+          "type": "input"
+        },
+        {
+          "name": "name_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "group_out",
+          "type": "mothur.groups"
+        },
+        {
+          "name": "alignreport_out",
+          "type": "mothur.align.report"
+        },
+        {
+          "name": "list_out",
+          "type": "mothur.list"
+        },
+        {
+          "name": "taxonomy_out",
+          "type": "mothur.seq.taxonomy"
+        }
+      ],
+      "position": {
+        "left": 2481.5,
+        "top": 171
+      },
+      "post_job_actions": {
+        "HideDatasetActionalignreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "alignreport_out"
+        },
+        "HideDatasetActioncount_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "count_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActionfastq_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fastq_out"
+        },
+        "HideDatasetActiongroup_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "group_out"
+        },
+        "HideDatasetActionlist_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "list_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionname_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "name_out"
+        },
+        "HideDatasetActionqfile_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "qfile_out"
+        },
+        "HideDatasetActiontaxonomy_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "taxonomy_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "2fa446f85b18",
+        "name": "mothur_remove_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"fastq_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"accnos\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"dups\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"fasta_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"count_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"group_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"taxonomy_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"savelog\": \"\\\"false\\\"\", \"alignreport_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"qfile_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"list_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"name_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "49f45474-c8a0-4c05-ba96-77ea28a93816",
+      "workflow_outputs": []
+    },
+    "10": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0",
+      "id": 10,
+      "input_connections": {
+        "count": {
+          "id": 9,
+          "output_name": "count_out"
+        },
+        "fasta": {
+          "id": 9,
+          "output_name": "fasta_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "taxonomy"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "qfile"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "summary"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "names"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "groups"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Screen.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "bad_accnos",
+          "type": "mothur.accnos"
+        },
+        {
+          "name": "qfile_out",
+          "type": "input"
+        },
+        {
+          "name": "names_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "groups_out",
+          "type": "mothur.groups"
+        },
+        {
+          "name": "alignreport_out",
+          "type": "mothur.align.report"
+        },
+        {
+          "name": "contigsreport_out",
+          "type": "tabular"
+        },
+        {
+          "name": "count_out",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 2769.5,
+        "top": 772
+      },
+      "post_job_actions": {
+        "HideDatasetActionalignreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "alignreport_out"
+        },
+        "HideDatasetActioncontigsreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "contigsreport_out"
+        },
+        "HideDatasetActioncount_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "count_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActiongroups_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "groups_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionnames_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "names_out"
+        },
+        "HideDatasetActionqfile_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "qfile_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "94d8dbac60d8",
+        "name": "mothur_screen_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"criteria\": \"\\\"-1\\\"\", \"optimize\": \"null\", \"end\": \"\\\"-1\\\"\", \"__page__\": 0, \"minlength\": \"\\\"200\\\"\", \"contigsrep\": \"{\\\"__current_case__\\\": 1, \\\"usecontigs\\\": \\\"no\\\"}\", \"maxhomop\": \"\\\"-1\\\"\", \"summary\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignrep\": \"{\\\"usealign\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"start\": \"\\\"-1\\\"\", \"maxambig\": \"\\\"-1\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"groups\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"qfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"maxlength\": \"\\\"300\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "40db7107-9e01-42d9-a7ce-ce353d10b0d5",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "bad_accnos",
+          "uuid": "0a6372b2-efbf-45a0-a55d-0940f5f2c5ad"
+        }
+      ]
+    },
+    "11": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0",
+      "id": 11,
+      "input_connections": {
+        "count": {
+          "id": 10,
+          "output_name": "count_out"
+        },
+        "fasta": {
+          "id": 10,
+          "output_name": "fasta_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "taxonomy"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "qfile"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "summary"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "names"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "groups"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Screen.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "bad_accnos",
+          "type": "mothur.accnos"
+        },
+        {
+          "name": "qfile_out",
+          "type": "input"
+        },
+        {
+          "name": "names_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "groups_out",
+          "type": "mothur.groups"
+        },
+        {
+          "name": "alignreport_out",
+          "type": "mothur.align.report"
+        },
+        {
+          "name": "contigsreport_out",
+          "type": "tabular"
+        },
+        {
+          "name": "count_out",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 3136.5,
+        "top": 736
+      },
+      "post_job_actions": {
+        "HideDatasetActionalignreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "alignreport_out"
+        },
+        "HideDatasetActioncontigsreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "contigsreport_out"
+        },
+        "HideDatasetActioncount_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "count_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActiongroups_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "groups_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionnames_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "names_out"
+        },
+        "HideDatasetActionqfile_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "qfile_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "94d8dbac60d8",
+        "name": "mothur_screen_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"criteria\": \"\\\"-1\\\"\", \"optimize\": \"null\", \"end\": \"\\\"-1\\\"\", \"__page__\": 0, \"minlength\": \"\\\"10\\\"\", \"contigsrep\": \"{\\\"__current_case__\\\": 1, \\\"usecontigs\\\": \\\"no\\\"}\", \"maxhomop\": \"\\\"-1\\\"\", \"summary\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignrep\": \"{\\\"usealign\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"start\": \"\\\"-1\\\"\", \"maxambig\": \"\\\"0\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"groups\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"qfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"maxlength\": \"\\\"-1\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "8128f4f6-4ede-4df8-9ab4-57b85e548789",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "bad_accnos",
+          "uuid": "717b0695-86a5-41d7-9568-6974608b2487"
+        }
+      ]
+    },
+    "12": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0",
+      "id": 12,
+      "input_connections": {
+        "fasta": {
+          "id": 11,
+          "output_name": "fasta_out"
+        },
+        "names": {
+          "id": 11,
+          "output_name": "count_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Unique.seqs",
+          "name": "fasta"
+        },
+        {
+          "description": "runtime parameter for tool Unique.seqs",
+          "name": "names"
+        }
+      ],
+      "label": null,
+      "name": "Unique.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "out_fasta",
+          "type": "input"
+        },
+        {
+          "name": "out_names",
+          "type": "mothur.names"
+        },
+        {
+          "name": "out_count",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 3552.5,
+        "top": 1111
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionout_count": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_count"
+        },
+        "HideDatasetActionout_fasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_fasta"
+        },
+        "HideDatasetActionout_names": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_names"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "7c3f9c0850ac",
+        "name": "mothur_unique_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"format\": \"\\\"count\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "34a4bf46-6d22-418d-8cfa-21c5f8968183",
+      "workflow_outputs": []
+    },
+    "13": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/mothur_align_seqs/1.39.5.0",
+      "id": 13,
+      "input_connections": {
+        "fasta": {
+          "id": 12,
+          "output_name": "out_fasta"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Align.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Align.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "out_align",
+          "type": "mothur.align"
+        },
+        {
+          "name": "report",
+          "type": "mothur.align.report"
+        },
+        {
+          "name": "flip_accnos",
+          "type": "mothur.accnos"
+        }
+      ],
+      "position": {
+        "left": 413.5,
+        "top": 1309
+      },
+      "post_job_actions": {
+        "HideDatasetActionflip_accnos": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "flip_accnos"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionout_align": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_align"
+        },
+        "HideDatasetActionreport": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "report"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/mothur_align_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "5d134e0b31fd",
+        "name": "mothur_align_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"scoring\": \"{\\\"adjust\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__page__\": 0, \"search\": \"{\\\"method\\\": \\\"kmer\\\", \\\"__current_case__\\\": 0, \\\"ksize\\\": \\\"8\\\"}\", \"reverse\": \"{\\\"flip\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"align\": \"\\\"needleman\\\"\", \"savelog\": \"\\\"false\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"alignment\": \"{\\\"source\\\": \\\"ref\\\", \\\"reference\\\": \\\"/data/galaxy/referenceData/mothur/silva.nr_v123.V4pcr.align\\\", \\\"__current_case__\\\": 0}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "7fb065ce-6924-44c6-bfe0-46f7cc0acf69",
+      "workflow_outputs": []
+    },
+    "14": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0",
+      "id": 14,
+      "input_connections": {
+        "count": {
+          "id": 12,
+          "output_name": "out_count"
+        },
+        "fasta": {
+          "id": 13,
+          "output_name": "out_align"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "taxonomy"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "qfile"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "summary"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "names"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "groups"
+        },
+        {
+          "description": "runtime parameter for tool Screen.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Screen.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "bad_accnos",
+          "type": "mothur.accnos"
+        },
+        {
+          "name": "qfile_out",
+          "type": "input"
+        },
+        {
+          "name": "names_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "groups_out",
+          "type": "mothur.groups"
+        },
+        {
+          "name": "alignreport_out",
+          "type": "mothur.align.report"
+        },
+        {
+          "name": "contigsreport_out",
+          "type": "tabular"
+        },
+        {
+          "name": "count_out",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 720.5,
+        "top": 1280
+      },
+      "post_job_actions": {
+        "HideDatasetActionalignreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "alignreport_out"
+        },
+        "HideDatasetActioncontigsreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "contigsreport_out"
+        },
+        "HideDatasetActioncount_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "count_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActiongroups_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "groups_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionnames_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "names_out"
+        },
+        "HideDatasetActionqfile_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "qfile_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "94d8dbac60d8",
+        "name": "mothur_screen_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"criteria\": \"\\\"-1\\\"\", \"optimize\": \"null\", \"end\": \"\\\"9609\\\"\", \"__page__\": 0, \"minlength\": \"\\\"10\\\"\", \"contigsrep\": \"{\\\"__current_case__\\\": 1, \\\"usecontigs\\\": \\\"no\\\"}\", \"maxhomop\": \"\\\"-1\\\"\", \"summary\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignrep\": \"{\\\"usealign\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"start\": \"\\\"27\\\"\", \"maxambig\": \"\\\"-1\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"groups\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"qfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"maxlength\": \"\\\"-1\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "128c9a91-f4c1-4456-85bf-5c5e48d8b1da",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "bad_accnos",
+          "uuid": "c3d46987-2f8f-4919-9769-1734b4652b02"
+        }
+      ]
+    },
+    "15": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_filter_seqs/mothur_filter_seqs/1.39.5.0",
+      "id": 15,
+      "input_connections": {
+        "fasta": {
+          "id": 14,
+          "output_name": "fasta_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Filter.seqs",
+          "name": "hard"
+        },
+        {
+          "description": "runtime parameter for tool Filter.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Filter.seqs",
+      "outputs": [
+        {
+          "name": "filteredfastas",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "out_filter",
+          "type": "mothur.filter"
+        },
+        {
+          "name": "filteredfasta",
+          "type": "fasta"
+        }
+      ],
+      "position": {
+        "left": 1054.5,
+        "top": 1284
+      },
+      "post_job_actions": {
+        "HideDatasetActionfilteredfasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "filteredfasta"
+        },
+        "HideDatasetActionfilteredfastas": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "filteredfastas"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionout_filter": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_filter"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_filter_seqs/mothur_filter_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "a0ce9fb3f260",
+        "name": "mothur_filter_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"inputs\": \"[]\", \"trump\": \"\\\".\\\"\", \"vertical\": \"\\\"true\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"hard\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"savelog\": \"\\\"false\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"soft\": \"\\\"0\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "c41ca352-f673-4841-9be8-243e43a613b7",
+      "workflow_outputs": []
+    },
+    "16": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0",
+      "id": 16,
+      "input_connections": {
+        "fasta": {
+          "id": 15,
+          "output_name": "filteredfasta"
+        },
+        "names": {
+          "id": 14,
+          "output_name": "count_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Unique.seqs",
+          "name": "fasta"
+        },
+        {
+          "description": "runtime parameter for tool Unique.seqs",
+          "name": "names"
+        }
+      ],
+      "label": null,
+      "name": "Unique.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "out_fasta",
+          "type": "input"
+        },
+        {
+          "name": "out_names",
+          "type": "mothur.names"
+        },
+        {
+          "name": "out_count",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 1314.5,
+        "top": 1339
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionout_count": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_count"
+        },
+        "HideDatasetActionout_fasta": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_fasta"
+        },
+        "HideDatasetActionout_names": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_names"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "7c3f9c0850ac",
+        "name": "mothur_unique_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"format\": \"\\\"count\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "f7ef4496-f76d-4b2c-8272-96a94b468b7e",
+      "workflow_outputs": []
+    },
+    "17": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_pre_cluster/mothur_pre_cluster/1.39.5.0",
+      "id": 17,
+      "input_connections": {
+        "fasta": {
+          "id": 16,
+          "output_name": "out_fasta"
+        },
+        "name": {
+          "id": 16,
+          "output_name": "out_count"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Pre.cluster",
+          "name": "group"
+        },
+        {
+          "description": "runtime parameter for tool Pre.cluster",
+          "name": "name"
+        },
+        {
+          "description": "runtime parameter for tool Pre.cluster",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Pre.cluster",
+      "outputs": [
+        {
+          "name": "map_out",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "names_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "count_out",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 1654.5,
+        "top": 1309
+      },
+      "post_job_actions": {
+        "HideDatasetActioncount_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "count_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionmap_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "map_out"
+        },
+        "HideDatasetActionnames_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "names_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_pre_cluster/mothur_pre_cluster/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "fbbe2b081299",
+        "name": "mothur_pre_cluster",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"diffs\": \"\\\"3\\\"\", \"group\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"topdown\": \"\\\"true\\\"\", \"gapopen\": \"\\\"-2\\\"\", \"mismatch\": \"\\\"-1\\\"\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"gapextend\": \"\\\"-1\\\"\", \"match\": \"\\\"1\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "cd6881fa-b87b-422e-8052-76d1f0052526",
+      "workflow_outputs": []
+    },
+    "18": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_chimera_uchime/mothur_chimera_uchime/1.39.5.0",
+      "id": 18,
+      "input_connections": {
+        "fasta": {
+          "id": 17,
+          "output_name": "fasta_out"
+        },
+        "template|count": {
+          "id": 17,
+          "output_name": "count_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Chimera.uchime",
+          "name": "template"
+        },
+        {
+          "description": "runtime parameter for tool Chimera.uchime",
+          "name": "template"
+        },
+        {
+          "description": "runtime parameter for tool Chimera.uchime",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Chimera.uchime",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "uchime.chimeras",
+          "type": "txt"
+        },
+        {
+          "name": "out_accnos",
+          "type": "mothur.accnos"
+        },
+        {
+          "name": "out_alns",
+          "type": "txt"
+        },
+        {
+          "name": "out_count",
+          "type": "mothur.count_table"
+        }
+      ],
+      "position": {
+        "left": 1968,
+        "top": 1387
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionout_accnos": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_accnos"
+        },
+        "HideDatasetActionout_alns": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_alns"
+        },
+        "HideDatasetActionout_count": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_count"
+        },
+        "HideDatasetActionuchime.chimeras": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "uchime.chimeras"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_chimera_uchime/mothur_chimera_uchime/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "4e3780d096af",
+        "name": "mothur_chimera_uchime",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"dn\": \"\\\"1.4\\\"\", \"dereplicate\": \"\\\"false\\\"\", \"minh\": \"\\\"0.3\\\"\", \"minchunk\": \"\\\"64\\\"\", \"xn\": \"\\\"8.0\\\"\", \"skipgaps2\": \"\\\"true\\\"\", \"minlen\": \"\\\"10\\\"\", \"__page__\": 0, \"maxp\": \"\\\"2\\\"\", \"xa\": \"\\\"1.0\\\"\", \"skipgaps\": \"\\\"true\\\"\", \"maxlen\": \"\\\"10000\\\"\", \"mindiv\": \"\\\"0.5\\\"\", \"savelog\": \"\\\"false\\\"\", \"template\": \"{\\\"count\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"source\\\": \\\"self\\\", \\\"group\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"abskew\\\": \\\"1.9\\\", \\\"__current_case__\\\": 2}\", \"chunks\": \"\\\"4\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"idsmoothwindow\": \"\\\"32\\\"\", \"__rerun_remap_job_id__\": null, \"alignment\": \"{\\\"ucl\\\": \\\"global\\\", \\\"__current_case__\\\": 0}\", \"chimealns\": \"\\\"false\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "e854c448-2c21-46ad-82e0-33019eca1ec4",
+      "workflow_outputs": []
+    },
+    "19": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0",
+      "id": 19,
+      "input_connections": {
+        "accnos": {
+          "id": 18,
+          "output_name": "out_accnos"
+        },
+        "count_in": {
+          "id": 17,
+          "output_name": "count_out"
+        },
+        "fasta_in": {
+          "id": 17,
+          "output_name": "fasta_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "qfile_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "fasta_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "count_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "group_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "taxonomy_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "accnos"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "alignreport_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "fastq_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "list_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.seqs",
+          "name": "name_in"
+        }
+      ],
+      "label": null,
+      "name": "Remove.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "fastq_out",
+          "type": "input"
+        },
+        {
+          "name": "count_out",
+          "type": "input"
+        },
+        {
+          "name": "qfile_out",
+          "type": "input"
+        },
+        {
+          "name": "name_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "group_out",
+          "type": "mothur.groups"
+        },
+        {
+          "name": "alignreport_out",
+          "type": "mothur.align.report"
+        },
+        {
+          "name": "list_out",
+          "type": "mothur.list"
+        },
+        {
+          "name": "taxonomy_out",
+          "type": "mothur.seq.taxonomy"
+        }
+      ],
+      "position": {
+        "left": 2263.5,
+        "top": 1463
+      },
+      "post_job_actions": {
+        "HideDatasetActionalignreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "alignreport_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActionfastq_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fastq_out"
+        },
+        "HideDatasetActiongroup_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "group_out"
+        },
+        "HideDatasetActionlist_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "list_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionname_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "name_out"
+        },
+        "HideDatasetActionqfile_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "qfile_out"
+        },
+        "HideDatasetActiontaxonomy_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "taxonomy_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "2fa446f85b18",
+        "name": "mothur_remove_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"fastq_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"accnos\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"dups\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"fasta_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"count_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"group_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"taxonomy_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"savelog\": \"\\\"false\\\"\", \"alignreport_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"qfile_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"list_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"name_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "30c32b93-ed24-436b-857a-1b1631f0c5cb",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "count_out",
+          "uuid": "e39ad145-bf0b-46f0-bbc0-07c02cc3d8ff"
+        }
+      ]
+    },
+    "20": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_seqs/mothur_classify_seqs/1.39.5.0",
+      "id": 20,
+      "input_connections": {
+        "count": {
+          "id": 19,
+          "output_name": "count_out"
+        },
+        "fasta": {
+          "id": 19,
+          "output_name": "fasta_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Classify.seqs",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Classify.seqs",
+          "name": "name"
+        },
+        {
+          "description": "runtime parameter for tool Classify.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Classify.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "taxonomy_out",
+          "type": "mothur.seq.taxonomy"
+        },
+        {
+          "name": "tax_summary",
+          "type": "mothur.tax.summary"
+        },
+        {
+          "name": "tree_sum",
+          "type": "tabular"
+        }
+      ],
+      "position": {
+        "left": 2635.5,
+        "top": 1433
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActiontax_summary": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "tax_summary"
+        },
+        "HideDatasetActiontaxonomy_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "taxonomy_out"
+        },
+        "HideDatasetActiontree_sum": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "tree_sum"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_seqs/mothur_classify_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "65b370206748",
+        "name": "mothur_classify_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"relabund\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"tax\": \"{\\\"source2\\\": \\\"ref\\\", \\\"taxonomy\\\": \\\"/data/galaxy/referenceData/mothur/silva.nr_v123.V4.tax\\\", \\\"__current_case__\\\": 0}\", \"savelog\": \"\\\"false\\\"\", \"classify\": \"{\\\"cutoff\\\": \\\"80\\\", \\\"iters\\\": \\\"100\\\", \\\"method\\\": \\\"wang\\\", \\\"ksize\\\": \\\"8\\\", \\\"__current_case__\\\": 0, \\\"probs\\\": \\\"false\\\"}\", \"printlevel\": \"\\\"-1\\\"\", \"output\": \"\\\"simple\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignment\": \"{\\\"source\\\": \\\"ref\\\", \\\"template\\\": \\\"/data/galaxy/referenceData/mothur/silva.nr_v123.V4pcr.align\\\", \\\"__current_case__\\\": 0}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "57d59494-5747-4c79-af7d-465aede13b63",
+      "workflow_outputs": []
+    },
+    "21": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_lineage/mothur_remove_lineage/1.39.5.0",
+      "id": 21,
+      "input_connections": {
+        "count": {
+          "id": 19,
+          "output_name": "count_out"
+        },
+        "fasta_in": {
+          "id": 19,
+          "output_name": "fasta_out"
+        },
+        "file|taxonomy": {
+          "id": 20,
+          "output_name": "taxonomy_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Remove.lineage",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Remove.lineage",
+          "name": "fasta_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.lineage",
+          "name": "group_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.lineage",
+          "name": "file"
+        },
+        {
+          "description": "runtime parameter for tool Remove.lineage",
+          "name": "alignreport_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.lineage",
+          "name": "list_in"
+        },
+        {
+          "description": "runtime parameter for tool Remove.lineage",
+          "name": "name_in"
+        }
+      ],
+      "label": null,
+      "name": "Remove.lineage",
+      "outputs": [
+        {
+          "name": "list_out",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "taxonomy_out",
+          "type": "mothur.seq.taxonomy"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "group_out",
+          "type": "mothur.groups"
+        },
+        {
+          "name": "count_out",
+          "type": "mothur.count_table"
+        },
+        {
+          "name": "name_out",
+          "type": "mothur.names"
+        },
+        {
+          "name": "alignreport_out",
+          "type": "mothur.align.report"
+        }
+      ],
+      "position": {
+        "left": 2981,
+        "top": 1432
+      },
+      "post_job_actions": {
+        "HideDatasetActionalignreport_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "alignreport_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActiongroup_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "group_out"
+        },
+        "HideDatasetActionlist_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "list_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionname_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "name_out"
+        },
+        "HideDatasetActiontaxonomy_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "taxonomy_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_lineage/mothur_remove_lineage/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "2f633c057c0d",
+        "name": "mothur_remove_lineage",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"dups\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"fasta_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"taxon\": \"\\\"Chloroplast-Mitochondria-unknown\\\"\", \"group_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"savelog\": \"\\\"false\\\"\", \"file\": \"{\\\"taxonomy\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"filetype\\\": \\\"usetaxonomy\\\", \\\"taxons\\\": null, \\\"__current_case__\\\": 0}\", \"alignreport_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"list_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"name_in\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "df5d97b4-98a1-412d-a897-1882b32f39f7",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "count_out",
+          "uuid": "78b08443-2e95-4a8a-be7a-40a39c23e904"
+        }
+      ]
+    },
+    "22": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_dist_seqs/mothur_dist_seqs/1.39.5.0",
+      "id": 22,
+      "input_connections": {
+        "fasta": {
+          "id": 21,
+          "output_name": "fasta_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Dist.seqs",
+          "name": "fasta"
+        }
+      ],
+      "label": null,
+      "name": "Dist.seqs",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "out_dist",
+          "type": "mothur.pair.dist"
+        }
+      ],
+      "position": {
+        "left": 3334.5,
+        "top": 1423
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_dist_seqs/mothur_dist_seqs/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "57eb5df69242",
+        "name": "mothur_dist_seqs",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"cutoff\": \"\\\"0.15\\\"\", \"countends\": \"\\\"true\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"output\": \"\\\"\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"calc\": \"\\\"\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "e7931af5-3813-4366-a591-6801a520e25e",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "out_dist",
+          "uuid": "78452885-2327-43ce-b207-fa5e78bdd613"
+        }
+      ]
+    },
+    "23": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-qc-report/1",
+      "id": 23,
+      "input_connections": {
+        "input|counttables_0|count_table": {
+          "id": 6,
+          "output_name": "seq_count"
+        },
+        "input|counttables_1|count_table": {
+          "id": 9,
+          "output_name": "count_out"
+        },
+        "input|counttables_2|count_table": {
+          "id": 10,
+          "output_name": "count_out"
+        },
+        "input|counttables_3|count_table": {
+          "id": 11,
+          "output_name": "count_out"
+        },
+        "input|counttables_4|count_table": {
+          "id": 14,
+          "output_name": "count_out"
+        },
+        "input|counttables_5|count_table": {
+          "id": 19,
+          "output_name": "count_out"
+        },
+        "input|counttables_6|count_table": {
+          "id": 21,
+          "output_name": "count_out"
+        }
+      },
+      "inputs": [],
+      "label": null,
+      "name": "QC report",
+      "outputs": [
+        {
+          "name": "persample",
+          "type": "input"
+        },
+        {
+          "name": "allsamples",
+          "type": "tabular"
+        }
+      ],
+      "position": {
+        "left": 3949.5,
+        "top": 693
+      },
+      "post_job_actions": {
+        "HideDatasetActionpersample": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "persample"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-qc-report/1",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"input\": \"{\\\"counttables\\\": [{\\\"__index__\\\": 0, \\\"label\\\": \\\"Raw Sequences\\\", \\\"count_table\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 1, \\\"label\\\": \\\"Trimming primer sequences\\\", \\\"count_table\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 2, \\\"label\\\": \\\"Trimming based on length\\\", \\\"count_table\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 3, \\\"label\\\": \\\"Trimming with maxambig\\\", \\\"count_table\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 4, \\\"label\\\": \\\"alignment\\\", \\\"count_table\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 5, \\\"label\\\": \\\"Chimera Removal\\\", \\\"count_table\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 6, \\\"label\\\": \\\"Remove non-bacterial\\\", \\\"count_table\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}], \\\"filetype\\\": \\\"counttable\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}",
+      "tool_version": "1",
+      "type": "tool",
+      "uuid": "2d74640b-0748-40c2-b0e3-20f0466e4ac7",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "allsamples",
+          "uuid": "bf5d4239-6563-449e-a9f0-8c43d163d053"
+        }
+      ]
+    },
+    "24": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster/mothur_cluster/1.39.5.0",
+      "id": 24,
+      "input_connections": {
+        "count": {
+          "id": 21,
+          "output_name": "count_out"
+        },
+        "matrix|dist": {
+          "id": 22,
+          "output_name": "out_dist"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Cluster",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Cluster",
+          "name": "matrix"
+        },
+        {
+          "description": "runtime parameter for tool Cluster",
+          "name": "matrix"
+        }
+      ],
+      "label": null,
+      "name": "Cluster",
+      "outputs": [
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "rabund",
+          "type": "mothur.rabund"
+        },
+        {
+          "name": "sabund",
+          "type": "mothur.sabund"
+        },
+        {
+          "name": "otulist",
+          "type": "mothur.list"
+        }
+      ],
+      "position": {
+        "left": 3508.5,
+        "top": 1644
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionrabund": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "rabund"
+        },
+        "HideDatasetActionsabund": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "sabund"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster/mothur_cluster/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "3bb756df109c",
+        "name": "mothur_cluster",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cutoff\": \"\\\"0.0\\\"\", \"matrix\": \"{\\\"dist\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"name\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"format\\\": \\\"column\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"precision\": \"\\\"100\\\"\", \"select_method\": \"{\\\"method\\\": \\\"average\\\", \\\"__current_case__\\\": 2}\", \"savelog\": \"\\\"false\\\"\", \"sim\": \"\\\"false\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "13876b82-c268-453f-89ad-91f7e82a53a0",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "otulist",
+          "uuid": "c9d13b74-59bc-4b9a-8d71-b8bba9288049"
+        }
+      ]
+    },
+    "25": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_otu/mothur_classify_otu/1.39.5.0",
+      "id": 25,
+      "input_connections": {
+        "count": {
+          "id": 21,
+          "output_name": "count_out"
+        },
+        "otu": {
+          "id": 24,
+          "output_name": "otulist"
+        },
+        "tax|taxonomy": {
+          "id": 21,
+          "output_name": "taxonomy_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Classify.otu",
+          "name": "count"
+        },
+        {
+          "description": "runtime parameter for tool Classify.otu",
+          "name": "group"
+        },
+        {
+          "description": "runtime parameter for tool Classify.otu",
+          "name": "name"
+        },
+        {
+          "description": "runtime parameter for tool Classify.otu",
+          "name": "tax"
+        },
+        {
+          "description": "runtime parameter for tool Classify.otu",
+          "name": "otu"
+        }
+      ],
+      "label": null,
+      "name": "Classify.otu",
+      "outputs": [
+        {
+          "name": "taxsummaries",
+          "type": "input"
+        },
+        {
+          "name": "taxonomies",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        }
+      ],
+      "position": {
+        "left": 3793.5,
+        "top": 1472
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActiontaxonomies": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "taxonomies"
+        },
+        "HideDatasetActiontaxsummaries": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "taxsummaries"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_otu/mothur_classify_otu/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "29882f4a1ef3",
+        "name": "mothur_classify_otu",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cutoff\": \"\\\"80\\\"\", \"group\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"relabund\": \"\\\"false\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"basis\": \"\\\"otu\\\"\", \"tax\": \"{\\\"source\\\": \\\"hist\\\", \\\"__current_case__\\\": 1, \\\"taxonomy\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"persample\": \"\\\"false\\\"\", \"label\": \"null\", \"savelog\": \"\\\"false\\\"\", \"otu\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"printlevel\": \"\\\"-1\\\"\", \"output\": \"\\\"simple\\\"\", \"probs\": \"\\\"false\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "6b5ba428-c0a3-42dc-a9f1-133ab83157d2",
+      "workflow_outputs": []
+    },
+    "26": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_shared/mothur_make_shared/1.39.5.0",
+      "id": 26,
+      "input_connections": {
+        "intype|group": {
+          "id": 21,
+          "output_name": "count_out"
+        },
+        "intype|otu": {
+          "id": 24,
+          "output_name": "otulist"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Make.shared",
+          "name": "intype"
+        },
+        {
+          "description": "runtime parameter for tool Make.shared",
+          "name": "intype"
+        }
+      ],
+      "label": null,
+      "name": "Make.shared",
+      "outputs": [
+        {
+          "name": "labelshares",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "shared",
+          "type": "mothur.shared"
+        },
+        {
+          "name": "groupout",
+          "type": "mothur.groups"
+        }
+      ],
+      "position": {
+        "left": 3825.5,
+        "top": 1885
+      },
+      "post_job_actions": {
+        "HideDatasetActiongroupout": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "groupout"
+        },
+        "HideDatasetActionlabelshares": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "labelshares"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_shared/mothur_make_shared/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "b5f98810181e",
+        "name": "mothur_make_shared",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"intype\": \"{\\\"group\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"label\\\": null, \\\"groups\\\": null, \\\"infile\\\": \\\"otulist\\\", \\\"otu\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"savelog\": \"\\\"false\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "d29c01bd-ca19-46f8-a842-827c131d4cc9",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "shared",
+          "uuid": "2cce37fc-28dc-4f99-b1af-3d65ac541d98"
+        }
+      ]
+    },
+    "27": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_get_oturep/mothur_get_oturep/1.39.5.0",
+      "id": 27,
+      "input_connections": {
+        "method_condition|fasta": {
+          "id": 21,
+          "output_name": "fasta_out"
+        },
+        "method_condition|matrix_condition|dist": {
+          "id": 22,
+          "output_name": "out_dist"
+        },
+        "method_condition|matrix_condition|nameOrCount": {
+          "id": 21,
+          "output_name": "count_out"
+        },
+        "otu": {
+          "id": 24,
+          "output_name": "otulist"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Get.oturep",
+          "name": "method_condition"
+        },
+        {
+          "description": "runtime parameter for tool Get.oturep",
+          "name": "otu"
+        }
+      ],
+      "label": null,
+      "name": "Get.oturep",
+      "outputs": [
+        {
+          "name": "names_out",
+          "type": "input"
+        },
+        {
+          "name": "fasta_out",
+          "type": "input"
+        },
+        {
+          "name": "count_out",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        }
+      ],
+      "position": {
+        "left": 4189.5,
+        "top": 1745
+      },
+      "post_job_actions": {
+        "HideDatasetActioncount_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "count_out"
+        },
+        "HideDatasetActionfasta_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "fasta_out"
+        },
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionnames_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "names_out"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_get_oturep/mothur_get_oturep/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "648b3da84b07",
+        "name": "mothur_get_oturep",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"label\": \"null\", \"savelog\": \"\\\"false\\\"\", \"method_condition\": \"{\\\"matrix_condition\\\": {\\\"nameOrCount\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"dist\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"matrix_format\\\": \\\"column\\\"}, \\\"large\\\": \\\"false\\\", \\\"__current_case__\\\": 0, \\\"pick\\\": {\\\"type\\\": \\\"no\\\", \\\"__current_case__\\\": 0}, \\\"fasta\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"method_switch\\\": \\\"distance\\\"}\", \"sorted\": \"\\\"\\\"\", \"otu\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "d1f703fb-c7fe-4731-9f62-f962ef5a15ff",
+      "workflow_outputs": []
+    },
+    "28": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "id": 28,
+      "input_connections": {
+        "input_collection": {
+          "id": 25,
+          "output_name": "taxonomies"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Extract Element",
+          "name": "input_collection"
+        }
+      ],
+      "label": null,
+      "name": "Extract Element",
+      "outputs": [
+        {
+          "name": "output",
+          "type": "auto"
+        },
+        {
+          "name": "extracted",
+          "type": "auto"
+        }
+      ],
+      "position": {
+        "left": 4147,
+        "top": 1382
+      },
+      "post_job_actions": {
+        "ChangeDatatypeActionoutput": {
+          "action_arguments": {
+            "newtype": "mothur.cons.taxonomy"
+          },
+          "action_type": "ChangeDatatypeAction",
+          "output_name": "output"
+        },
+        "HideDatasetActionextracted": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "extracted"
+        },
+        "HideDatasetActionoutput": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "output"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "c46360dcbf3f",
+        "name": "extract_element_from_collection",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"${level}\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "b7f27b09-e820-4892-a53c-f562fa6e375c",
+      "workflow_outputs": []
+    },
+    "29": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "id": 29,
+      "input_connections": {
+        "input_collection": {
+          "id": 27,
+          "output_name": "fasta_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Extract Element",
+          "name": "input_collection"
+        }
+      ],
+      "label": null,
+      "name": "Extract Element",
+      "outputs": [
+        {
+          "name": "output",
+          "type": "auto"
+        },
+        {
+          "name": "extracted",
+          "type": "auto"
+        }
+      ],
+      "position": {
+        "left": 5177.5,
+        "top": 1973
+      },
+      "post_job_actions": {
+        "ChangeDatatypeActionoutput": {
+          "action_arguments": {
+            "newtype": "fasta"
+          },
+          "action_type": "ChangeDatatypeAction",
+          "output_name": "output"
+        },
+        "HideDatasetActionextracted": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "extracted"
+        },
+        "HideDatasetActionoutput": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "output"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "c46360dcbf3f",
+        "name": "extract_element_from_collection",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"${level}\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "d84666d0-74ea-4aa4-a321-7963d72c5cd8",
+      "workflow_outputs": []
+    },
+    "30": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-correct-replicates/0.6",
+      "id": 30,
+      "input_connections": {
+        "shared": {
+          "id": 26,
+          "output_name": "shared"
+        },
+        "taxonomy": {
+          "id": 28,
+          "output_name": "output"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Correct counts",
+          "name": "taxonomy"
+        },
+        {
+          "description": "runtime parameter for tool Correct counts",
+          "name": "shared"
+        }
+      ],
+      "label": null,
+      "name": "Correct counts",
+      "outputs": [
+        {
+          "name": "corrected_out",
+          "type": "mothur.shared"
+        },
+        {
+          "name": "corrected_tax",
+          "type": "input"
+        },
+        {
+          "name": "corrected_out_avg",
+          "type": "mothur.shared"
+        }
+      ],
+      "position": {
+        "left": 4770,
+        "top": 1407
+      },
+      "post_job_actions": {
+        "HideDatasetActioncorrected_out": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "corrected_out"
+        },
+        "HideDatasetActioncorrected_out_avg": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "corrected_out_avg"
+        },
+        "HideDatasetActioncorrected_tax": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "corrected_tax"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-correct-replicates/0.6",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"negative_control\": \"\\\"${negative_control_sample_name}\\\"\", \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"copies\": \"\\\"${copies_control_species_in_samples}\\\"\", \"negative_control_species\": \"\\\"Oscillatoria\\\"\", \"nc_copies\": \"\\\"${copies_control_species_in_negative_control}\\\"\", \"shared\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"replicate_suffix\": \"\\\"_replicate\\\"\"}",
+      "tool_version": "0.6",
+      "type": "tool",
+      "uuid": "e32bd653-ee8d-4dbf-8488-c3c1583d6e9c",
+      "workflow_outputs": []
+    },
+    "31": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-make-multi-otutable/0.1",
+      "id": 31,
+      "input_connections": {
+        "shared_file": {
+          "id": 26,
+          "output_name": "shared"
+        },
+        "taxonomy": {
+          "id": 28,
+          "output_name": "output"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Make multisample OTUtable",
+          "name": "taxonomy"
+        },
+        {
+          "description": "runtime parameter for tool Make multisample OTUtable",
+          "name": "shared_file"
+        }
+      ],
+      "label": null,
+      "name": "Make multisample OTUtable",
+      "outputs": [
+        {
+          "name": "multi_otutable",
+          "type": "tabular"
+        }
+      ],
+      "position": {
+        "left": 4795.5,
+        "top": 1771
+      },
+      "post_job_actions": {
+        "HideDatasetActionmulti_otutable": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "multi_otutable"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-make-multi-otutable/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"shared_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"level\": \"\\\"${level}\\\"\"}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "3943e057-90c1-494f-8c34-17d9eed9021f",
+      "workflow_outputs": []
+    },
+    "32": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_summary_single/mothur_summary_single/1.39.5.0",
+      "id": 32,
+      "input_connections": {
+        "otu": {
+          "id": 30,
+          "output_name": "corrected_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Summary.single",
+          "name": "otu"
+        }
+      ],
+      "label": null,
+      "name": "Summary.single",
+      "outputs": [
+        {
+          "name": "summaryfiles",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        },
+        {
+          "name": "subsample_summary",
+          "type": "tabular"
+        },
+        {
+          "name": "summary",
+          "type": "tabular"
+        }
+      ],
+      "position": {
+        "left": 5111,
+        "top": 1023
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionsubsample_summary": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "subsample_summary"
+        },
+        "HideDatasetActionsummary": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "summary"
+        },
+        "HideDatasetActionsummaryfiles": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "summaryfiles"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_summary_single/mothur_summary_single/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "2857a688a7e9",
+        "name": "mothur_summary_single",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"abund\": \"\\\"10\\\"\", \"__rerun_remap_job_id__\": null, \"groupmode\": \"\\\"true\\\"\", \"label\": \"null\", \"subsample\": \"{\\\"use\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"savelog\": \"\\\"false\\\"\", \"calc\": \"[\\\"ace\\\", \\\"chao\\\", \\\"jack\\\", \\\"sobs\\\", \\\"simpson\\\", \\\"shannon\\\", \\\"npshannon\\\"]\", \"otu\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"size\": \"\\\"\\\"\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "0d0251fa-91fa-42b2-bee0-10ade82829f2",
+      "workflow_outputs": []
+    },
+    "33": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_biom/mothur_make_biom/1.39.5.0",
+      "id": 33,
+      "input_connections": {
+        "constaxonomy": {
+          "id": 30,
+          "output_name": "corrected_tax"
+        },
+        "otu": {
+          "id": 30,
+          "output_name": "corrected_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Make.biom",
+          "name": "otu"
+        },
+        {
+          "description": "runtime parameter for tool Make.biom",
+          "name": "constaxonomy"
+        },
+        {
+          "description": "runtime parameter for tool Make.biom",
+          "name": "metadata"
+        }
+      ],
+      "label": null,
+      "name": "Make.biom",
+      "outputs": [
+        {
+          "name": "biomfiles",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        }
+      ],
+      "position": {
+        "left": 5111,
+        "top": 1229
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_biom/mothur_make_biom/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "143cd841de28",
+        "name": "mothur_make_biom",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"matrixtype\": \"\\\"sparse\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"picrustc\": \"{\\\"use\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"label\": \"null\", \"savelog\": \"\\\"false\\\"\", \"groups\": \"null\", \"otu\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"constaxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"metadata\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "f5aaf128-0777-4e66-ba21-144f5b606021",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "biomfiles",
+          "uuid": "3f9403f5-a7b5-41aa-a5f1-dbbdcf8150a3"
+        }
+      ]
+    },
+    "34": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-make-multi-otutable/0.1",
+      "id": 34,
+      "input_connections": {
+        "shared_file": {
+          "id": 30,
+          "output_name": "corrected_out"
+        },
+        "taxonomy": {
+          "id": 30,
+          "output_name": "corrected_tax"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Make multisample OTUtable",
+          "name": "taxonomy"
+        },
+        {
+          "description": "runtime parameter for tool Make multisample OTUtable",
+          "name": "shared_file"
+        }
+      ],
+      "label": null,
+      "name": "Make multisample OTUtable",
+      "outputs": [
+        {
+          "name": "multi_otutable",
+          "type": "tabular"
+        }
+      ],
+      "position": {
+        "left": 5120.5,
+        "top": 1475
+      },
+      "post_job_actions": {
+        "HideDatasetActionmulti_otutable": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "multi_otutable"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-make-multi-otutable/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"shared_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"level\": \"\\\"${level}\\\"\"}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "6e6d9b6a-68f9-45fa-80f0-83de13ddf664",
+      "workflow_outputs": []
+    },
+    "35": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_rarefaction_single/mothur_rarefaction_single/1.39.5.0",
+      "id": 35,
+      "input_connections": {
+        "otu": {
+          "id": 30,
+          "output_name": "corrected_out"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Rarefaction.single",
+          "name": "otu"
+        }
+      ],
+      "label": null,
+      "name": "Rarefaction.single",
+      "outputs": [
+        {
+          "name": "rarefactioncurves",
+          "type": "input"
+        },
+        {
+          "name": "logfile",
+          "type": "txt"
+        }
+      ],
+      "position": {
+        "left": 4862.5,
+        "top": 2200
+      },
+      "post_job_actions": {
+        "HideDatasetActionlogfile": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "logfile"
+        },
+        "HideDatasetActionrarefactioncurves": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "rarefactioncurves"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_rarefaction_single/mothur_rarefaction_single/1.39.5.0",
+      "tool_shed_repository": {
+        "changeset_revision": "8091da04fbac",
+        "name": "mothur_rarefaction_single",
+        "owner": "iuc",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"abund\": \"\\\"10\\\"\", \"iters\": \"\\\"1000\\\"\", \"__rerun_remap_job_id__\": null, \"label\": \"[\\\"${level}\\\"]\", \"savelog\": \"\\\"false\\\"\", \"freq\": \"\\\"100.0\\\"\", \"calc\": \"[\\\"sobs\\\"]\", \"otu\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "1.39.5.0",
+      "type": "tool",
+      "uuid": "675dadab-9299-4c24-be96-70ade5b2c745",
+      "workflow_outputs": []
+    },
+    "36": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-krona-mothur/1",
+      "id": 36,
+      "input_connections": {
+        "input|shared_file": {
+          "id": 30,
+          "output_name": "corrected_out"
+        },
+        "input|taxonomy": {
+          "id": 30,
+          "output_name": "corrected_tax"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Krona",
+          "name": "input"
+        },
+        {
+          "description": "runtime parameter for tool Krona",
+          "name": "input"
+        }
+      ],
+      "label": null,
+      "name": "Krona",
+      "outputs": [
+        {
+          "name": "krona_plot",
+          "type": "html"
+        }
+      ],
+      "position": {
+        "left": 5140.5,
+        "top": 1636
+      },
+      "post_job_actions": {},
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-krona-mothur/1",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"input\": \"{\\\"taxonomy\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"shared_file\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"haveshared\\\": \\\"yes\\\", \\\"__current_case__\\\": 1, \\\"level\\\": \\\"${level}\\\"}\", \"__rerun_remap_job_id__\": null, \"with_otu\": \"\\\"false\\\"\", \"__page__\": 0}",
+      "tool_version": "1",
+      "type": "tool",
+      "uuid": "30fbc548-d14b-4a21-bbb9-bcaefecd9619",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "krona_plot",
+          "uuid": "b3cbac41-f141-4422-b8c8-a7274a625e47"
+        }
+      ]
+    },
+    "37": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-split-multi-otutable/0.1",
+      "id": 37,
+      "input_connections": {
+        "otutable": {
+          "id": 31,
+          "output_name": "multi_otutable"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Split multisample OTUtable",
+          "name": "otutable"
+        }
+      ],
+      "label": null,
+      "name": "Split multisample OTUtable",
+      "outputs": [
+        {
+          "name": "sample_otutables",
+          "type": "input"
+        }
+      ],
+      "position": {
+        "left": 5135.5,
+        "top": 1825
+      },
+      "post_job_actions": {},
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-split-multi-otutable/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"otutable\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "fd6f698d-a28b-4dd8-98d0-68fae09d6d88",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "sample_otutables",
+          "uuid": "96ffc527-bb98-4062-9652-43d28167b2b4"
+        }
+      ]
+    },
+    "38": {
+      "annotation": "",
+      "content_id": "Filter1",
+      "id": 38,
+      "input_connections": {
+        "input": {
+          "id": 32,
+          "output_name": "summary"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Filter",
+          "name": "input"
+        }
+      ],
+      "label": null,
+      "name": "Filter",
+      "outputs": [
+        {
+          "name": "out_file1",
+          "type": "input"
+        }
+      ],
+      "position": {
+        "left": 5408.5,
+        "top": 1002
+      },
+      "post_job_actions": {
+        "HideDatasetActionout_file1": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_file1"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "Filter1",
+      "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"header_lines\": \"\\\"1\\\"\", \"cond\": \"\\\"c1=='${level}'\\\"\", \"__page__\": 0}",
+      "tool_version": "1.1.0",
+      "type": "tool",
+      "uuid": "d0471d2e-9a8a-42f5-82e1-29aec7cd1776",
+      "workflow_outputs": []
+    },
+    "39": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-otutable_add_blast/0.1",
+      "id": 39,
+      "input_connections": {
+        "fasta": {
+          "id": 29,
+          "output_name": "output"
+        },
+        "otutable": {
+          "id": 34,
+          "output_name": "multi_otutable"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Add BLAST links",
+          "name": "fasta"
+        },
+        {
+          "description": "runtime parameter for tool Add BLAST links",
+          "name": "otutable"
+        }
+      ],
+      "label": null,
+      "name": "Add BLAST links",
+      "outputs": [
+        {
+          "name": "otutable_with_blast",
+          "type": "tabular"
+        },
+        {
+          "name": "filtered_otureps",
+          "type": "fasta"
+        }
+      ],
+      "position": {
+        "left": 5474.5,
+        "top": 1685
+      },
+      "post_job_actions": {
+        "HideDatasetActionfiltered_otureps": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "filtered_otureps"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-otutable_add_blast/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "607c5e7e0a64",
+        "name": "mycrobiota",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"otutable\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "5288c029-7cbf-46d5-9571-139fd52d721e",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "otutable_with_blast",
+          "uuid": "ac18f947-d8f0-4157-a2a9-60cacfc496a9"
+        }
+      ]
+    },
+    "40": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "id": 40,
+      "input_connections": {
+        "input_collection": {
+          "id": 35,
+          "output_name": "rarefactioncurves"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Extract Element",
+          "name": "input_collection"
+        }
+      ],
+      "label": null,
+      "name": "Extract Element",
+      "outputs": [
+        {
+          "name": "output",
+          "type": "auto"
+        },
+        {
+          "name": "extracted",
+          "type": "auto"
+        }
+      ],
+      "position": {
+        "left": 5157.5,
+        "top": 2316
+      },
+      "post_job_actions": {
+        "ChangeDatatypeActionoutput": {
+          "action_arguments": {
+            "newtype": "tabular"
+          },
+          "action_type": "ChangeDatatypeAction",
+          "output_name": "output"
+        },
+        "HideDatasetActionextracted": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "extracted"
+        },
+        "HideDatasetActionoutput": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "output"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1",
+      "tool_shed_repository": {
+        "changeset_revision": "c46360dcbf3f",
+        "name": "extract_element_from_collection",
+        "owner": "erasmus-medical-center",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"sobs\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+      "tool_version": "0.1",
+      "type": "tool",
+      "uuid": "50aa7683-8ed1-42db-b2ae-45a5507ce70f",
+      "workflow_outputs": []
+    },
+    "41": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/jmsong/transpose/transpose/1.0.0",
+      "id": 41,
+      "input_connections": {
+        "input": {
+          "id": 38,
+          "output_name": "out_file1"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Transpose",
+          "name": "input"
+        }
+      ],
+      "label": null,
+      "name": "Transpose",
+      "outputs": [
+        {
+          "name": "out_file",
+          "type": "input"
+        }
+      ],
+      "position": {
+        "left": 5509.5,
+        "top": 1120
+      },
+      "post_job_actions": {
+        "HideDatasetActionout_file": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_file"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/jmsong/transpose/transpose/1.0.0",
+      "tool_shed_repository": {
+        "changeset_revision": "5d5bdc4c409b",
+        "name": "transpose",
+        "owner": "jmsong",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}",
+      "tool_version": "1.0.0",
+      "type": "tool",
+      "uuid": "6e2bfa12-c715-4138-9849-4fe28882b9da",
+      "workflow_outputs": []
+    },
+    "42": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+      "id": 42,
+      "input_connections": {
+        "input": {
+          "id": 40,
+          "output_name": "output"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Regex Find And Replace",
+          "name": "input"
+        }
+      ],
+      "label": null,
+      "name": "Regex Find And Replace",
+      "outputs": [
+        {
+          "name": "out_file1",
+          "type": "input"
+        }
+      ],
+      "position": {
+        "left": 5351.5,
+        "top": 2239
+      },
+      "post_job_actions": {},
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+      "tool_shed_repository": {
+        "changeset_revision": "9ea374bb0350",
+        "name": "regex_find_replace",
+        "owner": "jjohnson",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"checks\": \"[{\\\"__index__\\\": 0, \\\"replacement\\\": \\\"\\\", \\\"pattern\\\": \\\"${level}-\\\"}]\", \"__page__\": 0}",
+      "tool_version": "0.1.0",
+      "type": "tool",
+      "uuid": "c1b069fc-eeb4-4128-a6b3-d9d6dc7f3ab1",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "out_file1",
+          "uuid": "f6c3c369-ee5c-4bb0-8fe2-41e07dbb2561"
+        }
+      ]
+    },
+    "43": {
+      "annotation": "",
+      "content_id": "Remove beginning1",
+      "id": 43,
+      "input_connections": {
+        "input": {
+          "id": 41,
+          "output_name": "out_file"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Remove beginning",
+          "name": "input"
+        }
+      ],
+      "label": null,
+      "name": "Remove beginning",
+      "outputs": [
+        {
+          "name": "out_file1",
+          "type": "input"
+        }
+      ],
+      "position": {
+        "left": 5614,
+        "top": 1237
+      },
+      "post_job_actions": {},
+      "tool_errors": null,
+      "tool_id": "Remove beginning1",
+      "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"num_lines\": \"\\\"1\\\"\", \"__page__\": 0}",
+      "tool_version": "1.0.0",
+      "type": "tool",
+      "uuid": "a291ff03-dcbb-4f28-84ba-2cbbaac62669",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "out_file1",
+          "uuid": "dafc9a45-5dfe-48ff-b95b-8a56c47b3879"
+        }
+      ]
+    },
+    "44": {
+      "annotation": "",
+      "content_id": "Remove beginning1",
+      "id": 44,
+      "input_connections": {
+        "input": {
+          "id": 42,
+          "output_name": "out_file1"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Remove beginning",
+          "name": "input"
+        }
+      ],
+      "label": null,
+      "name": "Remove beginning",
+      "outputs": [
+        {
+          "name": "out_file1",
+          "type": "input"
+        }
+      ],
+      "position": {
+        "left": 5582,
+        "top": 2162
+      },
+      "post_job_actions": {
+        "HideDatasetActionout_file1": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_file1"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "Remove beginning1",
+      "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"num_lines\": \"\\\"1\\\"\", \"__page__\": 0}",
+      "tool_version": "1.0.0",
+      "type": "tool",
+      "uuid": "ee0bce5b-4054-4ec1-8b76-f70a4bd037e1",
+      "workflow_outputs": []
+    },
+    "45": {
+      "annotation": "",
+      "content_id": "Grep1",
+      "id": 45,
+      "input_connections": {
+        "input": {
+          "id": 44,
+          "output_name": "out_file1"
+        }
+      },
+      "inputs": [
+        {
+          "description": "runtime parameter for tool Select",
+          "name": "input"
+        }
+      ],
+      "label": null,
+      "name": "Select",
+      "outputs": [
+        {
+          "name": "out_file1",
+          "type": "input"
+        }
+      ],
+      "position": {
+        "left": 5769.5,
+        "top": 2095
+      },
+      "post_job_actions": {
+        "HideDatasetActionout_file1": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_file1"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "Grep1",
+      "tool_state": "{\"__page__\": 0, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"invert\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"pattern\": \"\\\"^\\\\\\\\w+\\\\\\\\t\\\\\\\\w+\\\"\"}",
+      "tool_version": "1.0.1",
+      "type": "tool",
+      "uuid": "443f0159-dadb-4a4e-82b1-c949bc9f633d",
+      "workflow_outputs": []
+    },
+    "46": {
+      "annotation": "",
+      "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.2",
+      "id": 46,
+      "input_connections": {
+        "series_0|input": {
+          "id": 45,
+          "output_name": "out_file1"
+        }
+      },
+      "inputs": [],
+      "label": null,
+      "name": "Plotting tool",
+      "outputs": [
+        {
+          "name": "out_file_pdf",
+          "type": "pdf"
+        },
+        {
+          "name": "out_file_png",
+          "type": "png"
+        }
+      ],
+      "position": {
+        "left": 5940.5,
+        "top": 1967
+      },
+      "post_job_actions": {
+        "HideDatasetActionout_file_pdf": {
+          "action_arguments": {},
+          "action_type": "HideDatasetAction",
+          "output_name": "out_file_pdf"
+        }
+      },
+      "tool_errors": null,
+      "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.2",
+      "tool_shed_repository": {
+        "changeset_revision": "ecb437f1d298",
+        "name": "xy_plot",
+        "owner": "devteam",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"xlab\": \"\\\"Number of Sequences\\\"\", \"series\": \"[{\\\"xcol\\\": \\\"1\\\", \\\"series_type\\\": {\\\"lty\\\": \\\"1\\\", \\\"lwd\\\": \\\"1.0\\\", \\\"type\\\": \\\"line\\\", \\\"col\\\": \\\"1\\\", \\\"__current_case__\\\": 0}, \\\"ycol\\\": [], \\\"header\\\": \\\"false\\\", \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__index__\\\": 0}]\", \"outftype\": \"\\\"png\\\"\", \"ylab\": \"\\\"Number of OTUs\\\"\", \"main\": \"\\\"Rarefaction\\\"\", \"__rerun_remap_job_id__\": null}",
+      "tool_version": "1.0.2",
+      "type": "tool",
+      "uuid": "191bab38-8eb1-4ac1-9f64-248886aaa805",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "out_file_png",
+          "uuid": "a731202a-b066-47b6-8dc7-671497607f2c"
+        }
+      ]
+    },
+    "47": {
+      "annotation": "",
+      "content_id": "iReport",
+      "id": 47,
+      "input_connections": {
+        "tabs_0|content_0|filetype|item": {
+          "id": 36,
+          "output_name": "krona_plot"
+        },
+        "tabs_0|content_2|filetype|item": {
+          "id": 39,
+          "output_name": "otutable_with_blast"
+        },
+        "tabs_0|content_4|filetype|item": {
+          "id": 39,
+          "output_name": "otutable_with_blast"
+        },
+        "tabs_0|content_7|filetype|item": {
+          "id": 29,
+          "output_name": "output"
+        },
+        "tabs_1|content_0|filetype|item": {
+          "id": 46,
+          "output_name": "out_file_png"
+        },
+        "tabs_1|content_1|filetype|item": {
+          "id": 42,
+          "output_name": "out_file1"
+        },
+        "tabs_2|content_0|filetype|item": {
+          "id": 43,
+          "output_name": "out_file1"
+        },
+        "tabs_3|content_10|filetype|item": {
+          "id": 14,
+          "output_name": "bad_accnos"
+        },
+        "tabs_3|content_12|filetype|item": {
+          "id": 18,
+          "output_name": "out_accnos"
+        },
+        "tabs_3|content_14|filetype|item": {
+          "id": 31,
+          "output_name": "multi_otutable"
+        },
+        "tabs_3|content_16|filetype|item": {
+          "id": 37,
+          "output_name": "sample_otutables"
+        },
+        "tabs_3|content_1|filetype|item": {
+          "id": 23,
+          "output_name": "allsamples"
+        },
+        "tabs_3|content_4|filetype|item": {
+          "id": 7,
+          "output_name": "scrap_fasta"
+        },
+        "tabs_3|content_6|filetype|item": {
+          "id": 10,
+          "output_name": "bad_accnos"
+        },
+        "tabs_3|content_8|filetype|item": {
+          "id": 11,
+          "output_name": "bad_accnos"
+        }
+      },
+      "inputs": [],
+      "label": null,
+      "name": "iReport",
+      "outputs": [
+        {
+          "name": "report",
+          "type": "html"
+        }
+      ],
+      "position": {
+        "left": 6085,
+        "top": 1158
+      },
+      "post_job_actions": {},
+      "tool_errors": null,
+      "tool_id": "iReport",
+      "tool_shed_repository": {
+        "changeset_revision": "42076db43d42",
+        "name": "ireport",
+        "owner": "saskia-hiltemann",
+        "tool_shed": "toolshed.g2.bx.psu.edu"
+      },
+      "tool_state": "{\"__page__\": 0, \"tabs\": \"[{\\\"content\\\": [{\\\"__index__\\\": 0, \\\"filetype\\\": {\\\"break\\\": \\\"true\\\", \\\"itemtype\\\": \\\"htmlfile\\\", \\\"height\\\": \\\"750\\\", \\\"ireport\\\": \\\"false\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2}}, {\\\"__index__\\\": 1, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"true\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"##OTUs at level ${level}\\\"}}, {\\\"__index__\\\": 2, \\\"filetype\\\": {\\\"minh\\\": \\\"350\\\", \\\"collink\\\": {\\\"columnhyperlink\\\": \\\"N\\\", \\\"__current_case__\\\": 1}, \\\"itemtype\\\": \\\"table\\\", \\\"fancy\\\": \\\"true\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"minw\\\": \\\"0\\\"}}, {\\\"__index__\\\": 3, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t<em>NOTE: Click on column headers to sort table</em>\\\\n\\\\n\\\\\\\\t\\\\\\\\tDownload this OTU table \\\"}}, {\\\"__index__\\\": 4, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"here\\\", \\\"break\\\": \\\"false\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}, {\\\"__index__\\\": 5, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"true\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"##OTU Representatives\\\"}}, {\\\"__index__\\\": 6, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t\\\\\\\\tDownload result file (fasta) with representative sequences \\\"}}, {\\\"__index__\\\": 7, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"here\\\", \\\"break\\\": \\\"false\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}], \\\"__index__\\\": 0, \\\"tabtitle\\\": \\\"Taxonomy\\\"}, {\\\"content\\\": [{\\\"__index__\\\": 0, \\\"filetype\\\": {\\\"__current_case__\\\": 4, \\\"itemtype\\\": \\\"image\\\", \\\"align\\\": \\\"none\\\", \\\"zoomlevel\\\": \\\"500\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"zoomenable\\\": \\\"false\\\", \\\"break\\\": \\\"true\\\"}}, {\\\"__index__\\\": 1, \\\"filetype\\\": {\\\"minh\\\": \\\"500\\\", \\\"collink\\\": {\\\"columnhyperlink\\\": \\\"N\\\", \\\"__current_case__\\\": 1}, \\\"itemtype\\\": \\\"table\\\", \\\"fancy\\\": \\\"true\\\", \\\"break\\\": \\\"false\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"minw\\\": \\\"700\\\"}}], \\\"__index__\\\": 1, \\\"tabtitle\\\": \\\"Rarefaction\\\"}, {\\\"content\\\": [{\\\"__index__\\\": 0, \\\"filetype\\\": {\\\"minh\\\": \\\"0\\\", \\\"collink\\\": {\\\"columnhyperlink\\\": \\\"N\\\", \\\"__current_case__\\\": 1}, \\\"itemtype\\\": \\\"table\\\", \\\"fancy\\\": \\\"false\\\", \\\"break\\\": \\\"false\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"minw\\\": \\\"1000\\\"}}], \\\"__index__\\\": 2, \\\"tabtitle\\\": \\\"Diversity\\\"}, {\\\"content\\\": [{\\\"__index__\\\": 0, \\\"filetype\\\": {\\\"break\\\": \\\"true\\\", \\\"md\\\": \\\"true\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"##Trimming, Alignment and Chimera Filtering  \\\\nA number of trimming and filtering steps were performed in this analysis\\\\n\\\\n1. Trim with oligos file\\\\n2. Trim with minlength=200, keepfirst=300\\\\n3. Trim poorly called nucleotides\\\\n4. Align unique sequences with an adaptation of the Bacterial SILVA SEED database release v119\\\\n5. Remove chimeric sequences using the Uchime source code\\\\n\\\\n##Number of reads removed at each filtering step\\\"}}, {\\\"__index__\\\": 1, \\\"filetype\\\": {\\\"minh\\\": \\\"0\\\", \\\"collink\\\": {\\\"columnhyperlink\\\": \\\"N\\\", \\\"__current_case__\\\": 1}, \\\"itemtype\\\": \\\"table\\\", \\\"fancy\\\": \\\"false\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"minw\\\": \\\"1600\\\"}}, {\\\"__index__\\\": 2, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"true\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"##Removed sequences at each step:\\\"}}, {\\\"__index__\\\": 3, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t\\\\\\\\tRemoved sequences due to lack primer of sequences: \\\"}}, {\\\"__index__\\\": 4, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"scrap.fasta\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}, {\\\"__index__\\\": 5, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t\\\\\\\\tRemoved sequences by length: \\\"}}, {\\\"__index__\\\": 6, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"bad..accnos\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}, {\\\"__index__\\\": 7, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t\\\\\\\\tRemoved sequences due to low quality base calls:\\\"}}, {\\\"__index__\\\": 8, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"bad.accnos\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}, {\\\"__index__\\\": 9, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t\\\\\\\\tRemoved accession numbers that did not align: \\\"}}, {\\\"__index__\\\": 10, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"bad.accnos\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}, {\\\"__index__\\\": 11, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t\\\\\\\\tRemoved accession numbers that contain chimeric sequences: \\\"}}, {\\\"__index__\\\": 12, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"uchime.accnos\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}, {\\\"__index__\\\": 13, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"false\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"\\\\\\\\t\\\\\\\\tOTUtable per replicate\\\"}}, {\\\"__index__\\\": 14, \\\"filetype\\\": {\\\"ireport\\\": \\\"false\\\", \\\"itemtype\\\": \\\"link\\\", \\\"item2\\\": \\\"OTUtable\\\", \\\"break\\\": \\\"true\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 7}}, {\\\"__index__\\\": 15, \\\"filetype\\\": {\\\"break\\\": \\\"false\\\", \\\"md\\\": \\\"true\\\", \\\"itemtype\\\": \\\"text\\\", \\\"__current_case__\\\": 0, \\\"item\\\": \\\"### OTU tables per sample with all replicates\\\\n\\\\n(counts are sequences, not copies)\\\"}}, {\\\"__index__\\\": 16, \\\"filetype\\\": {\\\"minh\\\": \\\"0\\\", \\\"collink\\\": {\\\"columnhyperlink\\\": \\\"N\\\", \\\"__current_case__\\\": 1}, \\\"itemtype\\\": \\\"table\\\", \\\"fancy\\\": \\\"true\\\", \\\"break\\\": \\\"false\\\", \\\"item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"minw\\\": \\\"0\\\"}}], \\\"__index__\\\": 3, \\\"tabtitle\\\": \\\"Quality Control\\\"}]\", \"coverimage\": \"\\\"\\\"\", \"label\": \"\\\"MYcrobiota\\\"\", \"minwidth\": \"\\\"1500\\\"\", \"proxy\": \"\\\"galaxy\\\"\", \"__rerun_remap_job_id__\": null, \"localhost\": \"\\\"https://bioinf-galaxian.erasmusmc.nl/galaxy\\\"\"}",
+      "tool_version": "1",
+      "type": "tool",
+      "uuid": "1450821d-5dec-439d-a647-fce56df3a7bb",
+      "workflow_outputs": [
+        {
+          "label": null,
+          "output_name": "report",
+          "uuid": "5638a8c7-a796-421f-a81b-28c8f9859330"
+        }
+      ]
+    }
+  },
+  "uuid": "28378183-ebd6-456f-9ce4-7ecd088bc634"
+}

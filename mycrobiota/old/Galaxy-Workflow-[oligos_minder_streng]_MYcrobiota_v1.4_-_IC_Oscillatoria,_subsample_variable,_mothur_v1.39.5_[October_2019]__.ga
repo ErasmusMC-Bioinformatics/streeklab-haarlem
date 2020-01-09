@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "Oscillatoria, mothur 1.39.5", 
     "format-version": "0.1", 
-    "name": "MYcrobiota v1.3 - IC Oscillatoria, subsample 20.000, mothur v1.39.5 [December 2018]", 
+    "name": "[oligos minder streng] MYcrobiota v1.4 - IC Oscillatoria, subsample variable, mothur v1.39.5 [October 2019]''", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -248,8 +248,8 @@
                 }
             ], 
             "position": {
-                "left": 888.5, 
-                "top": 691
+                "left": 890.5, 
+                "top": 688
             }, 
             "post_job_actions": {
                 "HideDatasetActioncount_out": {
@@ -311,7 +311,7 @@
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"input\": \"{\\\"name_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"use_group\\\": {\\\"groups\\\": null, \\\"group_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"to_filter\\\": \\\"yes\\\", \\\"__current_case__\\\": 1, \\\"persample\\\": \\\"true\\\"}, \\\"otu\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"format\\\": \\\"fasta\\\"}\", \"size\": \"\\\"20000\\\"\"}", 
+            "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"taxonomy\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"savelog\": \"\\\"false\\\"\", \"input\": \"{\\\"name_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"use_group\\\": {\\\"groups\\\": null, \\\"group_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"to_filter\\\": \\\"yes\\\", \\\"__current_case__\\\": 1, \\\"persample\\\": \\\"true\\\"}, \\\"otu\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"format\\\": \\\"fasta\\\"}\", \"size\": \"\\\"${subsample_level}\\\"\"}", 
             "tool_version": "1.39.5.0", 
             "type": "tool", 
             "uuid": "71818288-be2e-4e64-9ffb-8949f63ecbba", 
@@ -388,7 +388,7 @@
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"in_group\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_group_subsampled\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_fasta_subsampled\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"in_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"threshold\": \"\\\"20000\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"in_group\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_group_subsampled\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_fasta_subsampled\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"in_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"threshold\": \"\\\"${subsample_level}\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "dd983119-5764-4e33-851d-6e5e6232f34e", 
@@ -635,8 +635,8 @@
                 }
             ], 
             "position": {
-                "left": 2210.5, 
-                "top": 791
+                "left": 2209.5, 
+                "top": 766
             }, 
             "post_job_actions": {
                 "HideDatasetActionfasta_allfiles": {
@@ -703,7 +703,7 @@
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"oligo\": \"{\\\"bdiffs\\\": \\\"0\\\", \\\"sdiffs\\\": \\\"0\\\", \\\"allfiles\\\": \\\"false\\\", \\\"ldiffs\\\": \\\"0\\\", \\\"pdiffs\\\": \\\"0\\\", \\\"tdiffs\\\": \\\"0\\\", \\\"keepforward\\\": \\\"false\\\", \\\"add\\\": \\\"yes\\\", \\\"__current_case__\\\": 1, \\\"oligos\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__page__\": 0, \"logtransform\": \"\\\"false\\\"\", \"checkorient\": \"\\\"false\\\"\", \"minlength\": \"\\\"0\\\"\", \"__rerun_remap_job_id__\": null, \"maxhomop\": \"\\\"0\\\"\", \"flip\": \"\\\"false\\\"\", \"qual\": \"{\\\"add2\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"removelast\": \"\\\"0\\\"\", \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"maxlength\": \"\\\"0\\\"\", \"maxambig\": \"\\\"-1\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"keepfirst\": \"\\\"0\\\"\"}", 
+            "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"oligo\": \"{\\\"bdiffs\\\": \\\"100\\\", \\\"sdiffs\\\": \\\"100\\\", \\\"allfiles\\\": \\\"false\\\", \\\"ldiffs\\\": \\\"100\\\", \\\"pdiffs\\\": \\\"100\\\", \\\"tdiffs\\\": \\\"${oligos_differences_allowed}\\\", \\\"keepforward\\\": \\\"false\\\", \\\"add\\\": \\\"yes\\\", \\\"__current_case__\\\": 1, \\\"oligos\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__page__\": 0, \"logtransform\": \"\\\"false\\\"\", \"checkorient\": \"\\\"false\\\"\", \"minlength\": \"\\\"0\\\"\", \"__rerun_remap_job_id__\": null, \"maxhomop\": \"\\\"0\\\"\", \"flip\": \"\\\"false\\\"\", \"qual\": \"{\\\"add2\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"removelast\": \"\\\"0\\\"\", \"savelog\": \"\\\"false\\\"\", \"names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"maxlength\": \"\\\"0\\\"\", \"maxambig\": \"\\\"-1\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"keepfirst\": \"\\\"0\\\"\"}", 
             "tool_version": "1.39.5.0", 
             "type": "tool", 
             "uuid": "d6d2a4e8-4eeb-4f6e-8696-bc9ed284b4d1", 
@@ -722,7 +722,7 @@
             "input_connections": {
                 "search|input": {
                     "id": 7, 
-                    "output_name": "trim_names"
+                    "output_name": "scrap_names"
                 }
             }, 
             "inputs": [
@@ -2819,7 +2819,7 @@
         }, 
         "28": {
             "annotation": "", 
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
             "id": 28, 
             "input_connections": {
                 "input_collection": {
@@ -2869,12 +2869,12 @@
                 }
             }, 
             "tool_errors": null, 
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "1613afce4e28", 
+                "changeset_revision": "c46360dcbf3f", 
                 "name": "extract_element_from_collection", 
                 "owner": "erasmus-medical-center", 
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
             "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"${level}\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1", 
@@ -2884,7 +2884,7 @@
         }, 
         "29": {
             "annotation": "", 
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
             "id": 29, 
             "input_connections": {
                 "input_collection": {
@@ -2934,12 +2934,12 @@
                 }
             }, 
             "tool_errors": null, 
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "1613afce4e28", 
+                "changeset_revision": "c46360dcbf3f", 
                 "name": "extract_element_from_collection", 
                 "owner": "erasmus-medical-center", 
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
             "tool_state": "{\"__page__\": 0, \"elementname\": \"\\\"${level}\\\"\", \"__rerun_remap_job_id__\": null, \"input_collection\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1", 
@@ -3559,7 +3559,7 @@
         }, 
         "40": {
             "annotation": "", 
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
             "id": 40, 
             "input_connections": {
                 "input_collection": {
@@ -3609,9 +3609,9 @@
                 }
             }, 
             "tool_errors": null, 
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/extract_element_from_collection/extract_element_from_collection/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "1613afce4e28", 
+                "changeset_revision": "c46360dcbf3f", 
                 "name": "extract_element_from_collection", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
@@ -3905,7 +3905,7 @@
         }, 
         "47": {
             "annotation": "", 
-            "content_id": "iReport", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/saskia-hiltemann/ireport/iReport/1", 
             "id": 47, 
             "input_connections": {
                 "tabs_0|content_0|filetype|item": {
@@ -3984,7 +3984,7 @@
             }, 
             "post_job_actions": {}, 
             "tool_errors": null, 
-            "tool_id": "iReport", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/saskia-hiltemann/ireport/iReport/1", 
             "tool_shed_repository": {
                 "changeset_revision": "42076db43d42", 
                 "name": "ireport", 
@@ -4004,5 +4004,5 @@
             ]
         }
     }, 
-    "uuid": "cb2a886e-39a6-4099-bd08-e0beb84fc58f"
+    "uuid": "411b860e-82be-4d6f-84d8-9bf9c384493a"
 }

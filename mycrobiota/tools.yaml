@@ -3,52 +3,16 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
+- name: suite_mothur
+  owner: iuc
+  revisions:
+  - d1090b154857
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: regex_find_replace
   owner: jjohnson
   revisions:
   - 9ea374bb0350
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_cluster
-  owner: iuc
-  revisions:
-  - 3bb756df109c
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_classify_otu
-  owner: iuc
-  revisions:
-  - 29882f4a1ef3
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_make_shared
-  owner: iuc
-  revisions:
-  - b5f98810181e
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_get_oturep
-  owner: iuc
-  revisions:
-  - 648b3da84b07
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_classify_seqs
-  owner: iuc
-  revisions:
-  - 65b370206748
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_remove_lineage
-  owner: iuc
-  revisions:
-  - 2f633c057c0d
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_dist_seqs
-  owner: iuc
-  revisions:
-  - 57eb5df69242
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: xy_plot
@@ -63,117 +27,15 @@ tools:
   - 5d5bdc4c409b
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_sub_sample
-  owner: iuc
-  revisions:
-  - 34e1fbd32a04
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_make_contigs
-  owner: iuc
-  revisions:
-  - 4b72b6c43327
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_unique_seqs
-  owner: iuc
-  revisions:
-  - 7c3f9c0850ac
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_trim_seqs
-  owner: iuc
-  revisions:
-  - c49a6454726c
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_count_seqs
-  owner: iuc
-  revisions:
-  - f00841c6fc14
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_remove_seqs
-  owner: iuc
-  revisions:
-  - 2fa446f85b18
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_list_seqs
-  owner: iuc
-  revisions:
-  - ea1a32c7927e
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_screen_seqs
-  owner: iuc
-  revisions:
-  - 94d8dbac60d8
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_align_seqs
-  owner: iuc
-  revisions:
-  - 5d134e0b31fd
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_filter_seqs
-  owner: iuc
-  revisions:
-  - a0ce9fb3f260
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_pre_cluster
-  owner: iuc
-  revisions:
-  - fbbe2b081299
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_chimera_uchime
-  owner: iuc
-  revisions:
-  - 4e3780d096af
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_rarefaction_single
-  owner: iuc
-  revisions:
-  - 8091da04fbac
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_make_biom
-  owner: iuc
-  revisions:
-  - 143cd841de28
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_summary_single
-  owner: iuc
-  revisions:
-  - 2857a688a7e9
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: extract_element_from_collection
   owner: erasmus-medical-center
   revisions:
-  - 1613afce4e28
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-- name: mycrobiota
-  owner: erasmus-medical-center
-  revisions:
-  - 607c5e7e0a64
+  - c46360dcbf3f
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: mycrobiota
   owner: erasmus-medical-center
   revisions:
   - 607c5e7e0a64
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: mothur_screen_seqs
-  owner: iuc
-  revisions:
-  - 94d8dbac60d8
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu

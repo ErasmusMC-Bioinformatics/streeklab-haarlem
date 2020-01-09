@@ -14,13 +14,12 @@ WORKDIR /galaxy-central
 # Install workflows
 RUN pip install --upgrade ephemeris
 
-ADD mycrobiota/workflows $GALAXY_HOME/workflows/
-RUN workflow-to-tools --output-file $GALAXY_ROOT/tools.yaml --panel_label workflow-tools --workflow `ls -p -d $GALAXY_HOME/workflows/* | grep -v -E "/$" | tr '\n' ' '`
-
+ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
 ADD install-tools.sh $GALAXY_HOME/install-tools.sh
 RUN $GALAXY_HOME/install-tools.sh
 
 # Install Tools
+ADD mycrobiota/workflows $GALAXY_HOME/workflows/
 ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
 RUN $GALAXY_HOME/install-workflows.sh
 
