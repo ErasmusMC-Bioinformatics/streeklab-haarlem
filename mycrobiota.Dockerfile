@@ -11,8 +11,11 @@ ENV GALAXY_CONFIG_CONDA_ENSURE_CHANNELS "iuc,conda-forge,bioconda,defaults"
 
 WORKDIR /galaxy-central
 
+RUN apt-get update; apt-get install -y libreadline-dev
+
 # Install workflows
-RUN pip install --upgrade ephemeris
+ADD mycrobiota/requirements.txt /requirements.txt
+RUN pip install -r /requirements.txt
 
 ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
 ADD install-tools.sh $GALAXY_HOME/install-tools.sh
@@ -26,9 +29,6 @@ RUN $GALAXY_HOME/install-workflows.sh
 ## manually install these ones
 ADD mycrobiota/xy_plot_tool/xy_plot.xml /shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/ecb437f1d298/xy_plot/xy_plot.xml
 ADD mycrobiota/xy_plot_tool/r_wrapper.sh /shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/ecb437f1d298/xy_plot/r_wrapper.sh
-
-
-
 
 # Reference Data
 ## copy loc file
