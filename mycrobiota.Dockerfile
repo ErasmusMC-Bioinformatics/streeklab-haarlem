@@ -52,10 +52,14 @@ ADD https://zenodo.org/record/2539387/files/silva.v4.fasta /galaxy-central/tool-
 
 ENV TERM "xterm"
 
-ADD mycrobiota/reference/mothur_aligndb.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_aligndb.loc
-ADD mycrobiota/reference/mothur_lookup.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_lookup.loc
-ADD mycrobiota/reference/mothur_map.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_map.loc
-ADD mycrobiota/reference/mothur_taxonomy.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/5d134e0b31fd/mothur_taxonomy.loc
+ADD mycrobiota/reference/mothur_aligndb.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/152ae632ab19/mothur_aligndb.loc
+ADD mycrobiota/reference/mothur_lookup.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/152ae632ab19/mothur_lookup.loc
+ADD mycrobiota/reference/mothur_map.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/152ae632ab19/mothur_map.loc
+ADD mycrobiota/reference/mothur_taxonomy.loc /galaxy-central/tool-data/toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/152ae632ab19/mothur_taxonomy.loc
+
+# Fix libreadline dependency manually
+ADD mycrobiota/libreadline.so.7 /lib/x86_64-linux-gnu/libreadline.so.7.0
+RUN ln -s /lib/x86_64-linux-gnu/libreadline.so.7.0 /lib/x86_64-linux-gnu/libreadline.so.7
 
 ENV GALAXY_CONFIG_CLEANUP_JOB "onsuccess"
 
