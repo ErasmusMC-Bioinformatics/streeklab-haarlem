@@ -61,6 +61,13 @@ ADD mycrobiota/reference/mothur_taxonomy.loc /galaxy-central/tool-data/toolshed.
 ADD mycrobiota/libreadline.so.7 /lib/x86_64-linux-gnu/libreadline.so.7.0
 RUN ln -s /lib/x86_64-linux-gnu/libreadline.so.7.0 /lib/x86_64-linux-gnu/libreadline.so.7
 
+ADD mycrobiota/libtinfo.so.5.9 /lib/x86_64-linux-gnu/libtinfo.so.5.9
+RUN rm /lib/x86_64-linux-gnu/libtinfo.so.5; ln -s /lib/x86_64-linux-gnu/libtinfo.so.5.9 /lib/x86_64-linux-gnu/libtinfo.so.5
+
+# fix bug in mothur table_count file type
+# with sed, galaxy-central is not a git repo...
+RUN sed -i '738d' /galaxy-central/lib/galaxy/datatypes/mothur.py
+
 ENV GALAXY_CONFIG_CLEANUP_JOB "onsuccess"
 
 VOLUME ["/export/", "/data/", "/var/lib/docker"]

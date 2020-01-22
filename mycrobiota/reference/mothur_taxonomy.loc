@@ -22,6 +22,6 @@
 #trainset7_112011.rdp.tax	/project/db/galaxy/mothur/RDP/trainset7_112011.rdp.tax
 #FungiLSU_train_1400bp_8506_mod.tax	/project/db/galaxy/mothur/RDP/FungiLSU_train_1400bp_8506_mod.tax
 #
+silva.nr_v123.V4.tax	/galaxy-central/tool-data/data/silva.nr_v123.V4.tax
 silva.nr_v119.tax	/galaxy-central/tool-data/data/silva.nr_v119.tax
 silva.nr_v123.Bogaert.tax	/galaxy-central/tool-data/data/silva.nr_v123.Bogaert.tax
-silva.nr_v123.V4.tax	/galaxy-central/tool-data/data/silva.nr_v123.V4.tax

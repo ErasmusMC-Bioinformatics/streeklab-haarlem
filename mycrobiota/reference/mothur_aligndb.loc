@@ -18,10 +18,10 @@
 #trainset7_112011.pds.fasta	/project/db/galaxy/mothur/RDP/trainset7_112011.pds.fasta
 #trainset7_112011.rdp.fasta	/project/db/galaxy/mothur/RDP/trainset7_112011.rdp.fasta
 
+silva.nr_v123.V4pcr.align	/galaxy-central/tool-data/data/silva.nr_v123.V4pcr.align
 silva.gold.align	/galaxy-central/tool-data/data/silva.gold.align
 silva.v4.fasta	/galaxy-central/tool-data/data/silva.v4.fasta
 silva.nr_v119.pcrv3v5.align	/galaxy-central/tool-data/data/silva.nr_v119.pcrv3v5.align
 HMP_silva.v35.pcr.align	/galaxy-central/tool-data/data/HMP_silva.v35.pcr.align
 HMP_silva.v53.pcr.align	/galaxy-central/tool-data/data/HMP_silva.v53.pcr.align
 silva.nr_v123.Bogaert.align	/galaxy-central/tool-data/data/silva.nr_v123.Bogaert.align
-silva.nr_v123.V4pcr.align	/galaxy-central/tool-data/data/silva.nr_v123.V4pcr.align
