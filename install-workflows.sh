@@ -13,7 +13,8 @@ galaxy-wait -g $galaxy_instance
 su - $GALAXY_USER
 
 # install workflows
-workflow-install --publish_workflows \
+echo "installing workflows"
+workflow-install -v --publish_workflows \
                  --workflow_path $GALAXY_HOME/workflows/ \
                  -g $galaxy_instance \
                  -u $GALAXY_DEFAULT_ADMIN_USER \
