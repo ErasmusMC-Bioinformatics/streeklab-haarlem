@@ -21,6 +21,7 @@ ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
 ADD install-tools-workflows.sh $GALAXY_HOME/install-tools-workflows.sh
 ADD mycrobiota/workflows $GALAXY_HOME/workflows/
 #ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
+RUN chmod a+rwx $GALAXY_HOME/install-tools-workflows.sh
 
 RUN $GALAXY_HOME/install-tools-workflows.sh
 
