@@ -13,18 +13,16 @@ WORKDIR /galaxy-central
 
 RUN apt-get update; apt-get install -y libreadline-dev
 
-# Install workflows
+# Install tools and workflows
 ADD mycrobiota/requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
-ADD install-tools.sh $GALAXY_HOME/install-tools.sh
-RUN $GALAXY_HOME/install-tools.sh
-
-# Install Tools
+ADD install-tools-workflows.sh $GALAXY_HOME/install-tools-workflows.sh
 ADD mycrobiota/workflows $GALAXY_HOME/workflows/
-ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
-RUN $GALAXY_HOME/install-workflows.sh
+#ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
+
+RUN $GALAXY_HOME/install-tools-workflows.sh
 
 ## manually install these ones
 ADD mycrobiota/xy_plot_tool/xy_plot.xml /shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/ecb437f1d298/xy_plot/xy_plot.xml
