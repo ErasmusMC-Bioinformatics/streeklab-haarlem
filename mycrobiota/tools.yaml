@@ -7,6 +7,10 @@ tools:
   owner: iuc
   tool_panel_section_label: Mothur
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+- name: mothur_list_seqs
+  owner: iuc
+  tool_panel_section_label: Mothur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: mothur_cluster
   owner: iuc
   tool_panel_section_label: Mothur
