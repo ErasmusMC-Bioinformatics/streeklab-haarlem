@@ -2,7 +2,7 @@ FROM bgruening/galaxy-stable:18.09
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
-ENV GALAXY_CONFIG_BRAND "HLA-JAK2"
+ENV GALAXY_CONFIG_BRAND "HLA-JAK2 2020-01-31"
 
 # Fix conda
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
@@ -29,7 +29,7 @@ RUN $GALAXY_HOME/install-workflows.sh
 RUN sed -i '114i<tool file="plotting/bar_chart.xml" />' /galaxy-central/config/tool_conf.xml.sample
 # Install gnuplot-py
 RUN apt update
-RUN apt install gnuplot -y 
+RUN apt install gnuplot -y
 RUN pip install numpy
 RUN wget http://downloads.sourceforge.net/project/gnuplot-py/Gnuplot-py/1.8/gnuplot-py-1.8.tar.gz -O /home/galaxy/gnuplot-py.tar.gz
 WORKDIR /home/galaxy/

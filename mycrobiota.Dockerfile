@@ -2,7 +2,7 @@ FROM quay.io/shiltemann/galaxy-ireport:16.07
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
-ENV GALAXY_CONFIG_BRAND "MYcrobiota 20-01-30"
+ENV GALAXY_CONFIG_BRAND "MYcrobiota 2020-01-31"
 
 # Fix conda
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
@@ -20,7 +20,6 @@ RUN pip install -r /requirements.txt
 ADD mycrobiota/tools.yaml $GALAXY_ROOT/tools.yaml
 ADD install-tools-workflows.sh $GALAXY_HOME/install-tools-workflows.sh
 ADD mycrobiota/workflows $GALAXY_HOME/workflows/
-#ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
 RUN chmod a+rwx $GALAXY_HOME/install-tools-workflows.sh
 
 RUN $GALAXY_HOME/install-tools-workflows.sh
