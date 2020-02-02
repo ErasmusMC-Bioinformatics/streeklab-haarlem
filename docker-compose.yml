@@ -6,7 +6,9 @@ services:
     ports:
       - 8080:80
     volumes:
-      - /root/streeklab/galaxy_storage/:/export/
+      - /root/galaxy_docker/galaxy_storage_HLA/:/export/
+    environment:
+      - "GALAXY_CONFIG_INSTALL_DATABASE_CONNECTION=true"
 
   mycrobiota:
     image: quay.io/erasmusmc_bioinformatics/streeklab-haarlem-galaxy-mycrobiota
@@ -14,5 +16,7 @@ services:
     ports:
       - 8081:80
     volumes:
-      - /root/streeklab/galaxy_storage_mycrobiota/:/export/
+      - /root/galaxy_docker/galaxy_storage_MYcrobiota/:/export/
+    environment:
+      - "GALAXY_CONFIG_INSTALL_DATABASE_CONNECTION=true"
 
