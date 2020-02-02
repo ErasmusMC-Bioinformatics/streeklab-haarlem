@@ -2,12 +2,13 @@ FROM quay.io/shiltemann/galaxy-ireport:16.07
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
-ENV GALAXY_CONFIG_BRAND "MYcrobiota 2020-01-31"
+ENV GALAXY_CONFIG_BRAND "MYcrobiota 2020-02-02"
 
 # Fix conda
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
 ENV GALAXY_CONFIG_CONDA_AUTO_INIT "True"
 ENV GALAXY_CONFIG_CONDA_ENSURE_CHANNELS "iuc,conda-forge,bioconda,defaults"
+ENV GALAXY_CONFIG_INSTALL_DATABASE_CONNECTION "sqlite:///tools-database.sqlite?isolation_level=IMMEDIATE"
 
 WORKDIR /galaxy-central
 
