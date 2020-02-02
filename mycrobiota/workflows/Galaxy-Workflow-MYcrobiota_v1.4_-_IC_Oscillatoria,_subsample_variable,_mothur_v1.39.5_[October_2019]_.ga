@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "Oscillatoria, mothur 1.39.5", 
     "format-version": "0.1", 
-    "name": "MYcrobiota v1.4 - IC Oscillatoria, subsample variable, mothur v1.39.5 [October 2019]'", 
+    "name": "MYcrobiota v1.4 - IC Oscillatoria, subsample variable, mothur v1.39.5 [October 2019]' (imported from API)", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -160,7 +160,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_contigs/mothur_make_contigs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "4b72b6c43327", 
+                "changeset_revision": "f65c34178487", 
                 "name": "mothur_make_contigs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -306,7 +306,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_sub_sample/mothur_sub_sample/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "34e1fbd32a04", 
+                "changeset_revision": "0f4dfa0332e8", 
                 "name": "mothur_sub_sample", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -383,7 +383,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota_subsample_add_discarded_samples/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -469,7 +469,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "7c3f9c0850ac", 
+                "changeset_revision": "84722a5b79af", 
                 "name": "mothur_unique_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -535,7 +535,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_count_seqs/mothur_count_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "f00841c6fc14", 
+                "changeset_revision": "59a962f57cb5", 
                 "name": "mothur_count_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -698,7 +698,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_trim_seqs/mothur_trim_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "c49a6454726c", 
+                "changeset_revision": "dc318dec8b86", 
                 "name": "mothur_trim_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -762,7 +762,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_list_seqs/mothur_list_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "ea1a32c7927e", 
+                "changeset_revision": "9b600578c108", 
                 "name": "mothur_list_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -936,7 +936,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "2fa446f85b18", 
+                "changeset_revision": "eec15ff2d3c9", 
                 "name": "mothur_remove_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1080,7 +1080,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "94d8dbac60d8", 
+                "changeset_revision": "a136fc12b26a", 
                 "name": "mothur_screen_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1230,7 +1230,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "94d8dbac60d8", 
+                "changeset_revision": "a136fc12b26a", 
                 "name": "mothur_screen_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1320,7 +1320,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "7c3f9c0850ac", 
+                "changeset_revision": "84722a5b79af", 
                 "name": "mothur_unique_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1396,12 +1396,12 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/mothur_align_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "5d134e0b31fd", 
+                "changeset_revision": "152ae632ab19", 
                 "name": "mothur_align_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"scoring\": \"{\\\"adjust\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__page__\": 0, \"search\": \"{\\\"method\\\": \\\"kmer\\\", \\\"__current_case__\\\": 0, \\\"ksize\\\": \\\"8\\\"}\", \"reverse\": \"{\\\"flip\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"align\": \"\\\"needleman\\\"\", \"savelog\": \"\\\"false\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"alignment\": \"{\\\"source\\\": \\\"ref\\\", \\\"reference\\\": \\\"/data/galaxy/referenceData/mothur/silva.nr_v123.V4pcr.align\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_state": "{\"scoring\": \"{\\\"adjust\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__page__\": 0, \"search\": \"{\\\"method\\\": \\\"kmer\\\", \\\"__current_case__\\\": 0, \\\"ksize\\\": \\\"8\\\"}\", \"reverse\": \"{\\\"flip\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"align\": \"\\\"needleman\\\"\", \"savelog\": \"\\\"false\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"alignment\": \"{\\\"source\\\": \\\"ref\\\", \\\"reference\\\": \\\"/galaxy-central/tool-data/data/silva.nr_v123.V4pcr.align\\\", \\\"__current_case__\\\": 0}\"}", 
             "tool_version": "1.39.5.0", 
             "type": "tool", 
             "uuid": "7fb065ce-6924-44c6-bfe0-46f7cc0acf69", 
@@ -1540,7 +1540,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_screen_seqs/mothur_screen_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "94d8dbac60d8", 
+                "changeset_revision": "a136fc12b26a", 
                 "name": "mothur_screen_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1626,7 +1626,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_filter_seqs/mothur_filter_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "a0ce9fb3f260", 
+                "changeset_revision": "b587a3a485b8", 
                 "name": "mothur_filter_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1710,7 +1710,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_unique_seqs/mothur_unique_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "7c3f9c0850ac", 
+                "changeset_revision": "84722a5b79af", 
                 "name": "mothur_unique_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1807,7 +1807,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_pre_cluster/mothur_pre_cluster/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "fbbe2b081299", 
+                "changeset_revision": "d848e23e9343", 
                 "name": "mothur_pre_cluster", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1904,7 +1904,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_chimera_uchime/mothur_chimera_uchime/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "4e3780d096af", 
+                "changeset_revision": "f1742cf23d95", 
                 "name": "mothur_chimera_uchime", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2073,7 +2073,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "2fa446f85b18", 
+                "changeset_revision": "eec15ff2d3c9", 
                 "name": "mothur_remove_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2167,12 +2167,12 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_seqs/mothur_classify_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "65b370206748", 
+                "changeset_revision": "2f5d4d86eb9a", 
                 "name": "mothur_classify_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"relabund\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"tax\": \"{\\\"source2\\\": \\\"ref\\\", \\\"taxonomy\\\": \\\"/data/galaxy/referenceData/mothur/silva.nr_v123.V4.tax\\\", \\\"__current_case__\\\": 0}\", \"savelog\": \"\\\"false\\\"\", \"classify\": \"{\\\"cutoff\\\": \\\"80\\\", \\\"iters\\\": \\\"100\\\", \\\"method\\\": \\\"wang\\\", \\\"ksize\\\": \\\"8\\\", \\\"__current_case__\\\": 0, \\\"probs\\\": \\\"false\\\"}\", \"printlevel\": \"\\\"-1\\\"\", \"output\": \"\\\"simple\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignment\": \"{\\\"source\\\": \\\"ref\\\", \\\"template\\\": \\\"/data/galaxy/referenceData/mothur/silva.nr_v123.V4pcr.align\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_state": "{\"count\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"relabund\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"tax\": \"{\\\"source2\\\": \\\"ref\\\", \\\"taxonomy\\\": \\\"/galaxy-central/tool-data/data/silva.nr_v123.V4.tax\\\", \\\"__current_case__\\\": 0}\", \"savelog\": \"\\\"false\\\"\", \"classify\": \"{\\\"cutoff\\\": \\\"80\\\", \\\"iters\\\": \\\"100\\\", \\\"method\\\": \\\"wang\\\", \\\"ksize\\\": \\\"8\\\", \\\"__current_case__\\\": 0, \\\"probs\\\": \\\"false\\\"}\", \"printlevel\": \"\\\"-1\\\"\", \"output\": \"\\\"simple\\\"\", \"fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignment\": \"{\\\"source\\\": \\\"ref\\\", \\\"template\\\": \\\"/galaxy-central/tool-data/data/silva.nr_v123.V4pcr.align\\\", \\\"__current_case__\\\": 0}\"}", 
             "tool_version": "1.39.5.0", 
             "type": "tool", 
             "uuid": "57d59494-5747-4c79-af7d-465aede13b63", 
@@ -2306,7 +2306,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_lineage/mothur_remove_lineage/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "2f633c057c0d", 
+                "changeset_revision": "2a4d6c3d9b6d", 
                 "name": "mothur_remove_lineage", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2365,7 +2365,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_dist_seqs/mothur_dist_seqs/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "57eb5df69242", 
+                "changeset_revision": "502323efbd82", 
                 "name": "mothur_dist_seqs", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2443,7 +2443,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-qc-report/1", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2532,7 +2532,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster/mothur_cluster/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "3bb756df109c", 
+                "changeset_revision": "5ea1f1f9d801", 
                 "name": "mothur_cluster", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2629,7 +2629,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_otu/mothur_classify_otu/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "29882f4a1ef3", 
+                "changeset_revision": "ec7c3ecca41a", 
                 "name": "mothur_classify_otu", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2708,7 +2708,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_shared/mothur_make_shared/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "b5f98810181e", 
+                "changeset_revision": "60f0853e33f3", 
                 "name": "mothur_make_shared", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -2806,7 +2806,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_get_oturep/mothur_get_oturep/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "648b3da84b07", 
+                "changeset_revision": "f821624d355c", 
                 "name": "mothur_get_oturep", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3011,7 +3011,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-correct-replicates/0.6", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3068,7 +3068,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-make-multi-otutable/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3144,7 +3144,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_summary_single/mothur_summary_single/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "2857a688a7e9", 
+                "changeset_revision": "72be09dfd803", 
                 "name": "mothur_summary_single", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3209,7 +3209,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_biom/mothur_make_biom/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "143cd841de28", 
+                "changeset_revision": "e29c05b88096", 
                 "name": "mothur_make_biom", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3272,7 +3272,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-make-multi-otutable/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3330,7 +3330,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_rarefaction_single/mothur_rarefaction_single/1.39.5.0", 
             "tool_shed_repository": {
-                "changeset_revision": "8091da04fbac", 
+                "changeset_revision": "b5bcc4bf53d1", 
                 "name": "mothur_rarefaction_single", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3381,7 +3381,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-krona-mothur/1", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3430,7 +3430,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-split-multi-otutable/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -3540,7 +3540,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/erasmus-medical-center/mycrobiota/mycrobiota-otutable_add_blast/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "607c5e7e0a64", 
+                "changeset_revision": "e93e39c121b1", 
                 "name": "mycrobiota", 
                 "owner": "erasmus-medical-center", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
