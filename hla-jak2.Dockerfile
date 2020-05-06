@@ -29,7 +29,7 @@ RUN $GALAXY_HOME/install-workflows.sh
 RUN sed -i '114i<tool file="plotting/bar_chart.xml" />' /galaxy-central/config/tool_conf.xml.sample
 # Install gnuplot-py
 RUN apt update
-RUN apt install gnuplot -y
+RUN apt install gnuplot libglu1 -y
 RUN pip install numpy
 RUN wget http://downloads.sourceforge.net/project/gnuplot-py/Gnuplot-py/1.8/gnuplot-py-1.8.tar.gz -O /home/galaxy/gnuplot-py.tar.gz
 WORKDIR /home/galaxy/
