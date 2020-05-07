@@ -20,6 +20,7 @@ ADD jak2-mutation/workflows $GALAXY_HOME/workflows/
 
 # install tools and workflows
 ADD install-tools-workflows.sh $GALAXY_HOME/install-tools-workflows.sh
+RUN chmod a+rwx $GALAXY_HOME/install-tools-workflows.sh
 RUN $GALAXY_HOME/install-tools-workflows.sh
 
 # Add/fix the barchart tool
