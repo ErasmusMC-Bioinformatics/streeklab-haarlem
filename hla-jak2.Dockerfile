@@ -39,7 +39,9 @@ RUN python setup.py install
 
 WORKDIR /galaxy-central
 
-
+# Add HLA blast db
+ADD hla-typing/blast_database/hla /blast/hla
+RUN echo -e "hla\tIMGT/HLA\t/blast/hla" >> /galaxy-central/tool-data/blastdb.loc
 
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 
