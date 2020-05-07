@@ -26,6 +26,12 @@ RUN $GALAXY_HOME/install-tools-workflows.sh
 # Add/fix the barchart tool
 # Enable the 'barchart_gnuplot' tool
 RUN sed -i '114i<tool file="plotting/bar_chart.xml" />' /galaxy-central/config/tool_conf.xml.sample
+
+# fix broken apt repo
+#RUN grep 'yarnpkg' /etc/apt/sources.list /etc/apt/sources.list.d/*
+#RUN grep 'research' /etc/apt/sources.list /etc/apt/sources.list.d/*
+RUN rm /etc/apt/sources.list.d/htcondor.list
+
 # Install gnuplot-py
 RUN apt update
 RUN apt install gnuplot libglu1 -y
