@@ -11,18 +11,16 @@ ENV GALAXY_CONFIG_CONDA_ENSURE_CHANNELS "iuc,conda-forge,bioconda,defaults"
 
 WORKDIR /galaxy-central
 
-# Install Tools
-ADD hla-typing/tools.yaml $GALAXY_ROOT/hla-tools.yaml
-RUN install-tools $GALAXY_ROOT/hla-tools.yaml
+# add Tools
+ADD hla-typing/tools.yaml $GALAXY_ROOT/tools.yaml
 
-ADD jak2-mutation/tools.yaml $GALAXY_ROOT/jak2-tools.yaml
-RUN install-tools $GALAXY_ROOT/jak2-tools.yaml
-
-# Install Workflows
+# add Workflows
 ADD hla-typing/workflows $GALAXY_HOME/workflows/
 ADD jak2-mutation/workflows $GALAXY_HOME/workflows/
-ADD install-workflows.sh $GALAXY_HOME/install-workflows.sh
-RUN $GALAXY_HOME/install-workflows.sh
+
+# install tools and workflows
+ADD install-tools-workflows.sh $GALAXY_HOME/install-tools-workflows.sh
+RUN $GALAXY_HOME/install-tools-workflows.sh
 
 # Add/fix the barchart tool
 # Enable the 'barchart_gnuplot' tool
