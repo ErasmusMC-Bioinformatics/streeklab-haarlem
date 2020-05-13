@@ -36,6 +36,7 @@ RUN rm /etc/apt/sources.list.d/htcondor.list
 RUN apt update
 RUN apt install gnuplot libglu1 -y
 RUN pip install numpy
+RUN /tool_deps/_conda/bin/conda create -n __gnuplot-py@1.8 -c bioconda gnuplot-py -y
 RUN wget http://downloads.sourceforge.net/project/gnuplot-py/Gnuplot-py/1.8/gnuplot-py-1.8.tar.gz -O /home/galaxy/gnuplot-py.tar.gz
 WORKDIR /home/galaxy/
 RUN tar xzf gnuplot-py.tar.gz
