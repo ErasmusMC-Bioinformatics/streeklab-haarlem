@@ -49,6 +49,9 @@ WORKDIR /galaxy-central
 ADD hla-typing/blast_database/hla /blast/hla
 ADD hla-typing/blast_database/blastdb.loc /galaxy-central/tool-data/blastdb.loc
 
+# install bcftools to save time on startup
+RUN /tool_deps/_conda/bin/python /export/tool_deps/_conda/bin/conda create -y --override-channels --channel iuc --channel conda-forge --channel bioconda --channel defaults --name __bcftools@1.5 bcftools=1.5
+
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 
 EXPOSE :80
