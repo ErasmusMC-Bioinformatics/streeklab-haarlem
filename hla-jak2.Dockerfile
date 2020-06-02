@@ -2,7 +2,7 @@ FROM bgruening/galaxy-stable:18.09
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
-ENV GALAXY_CONFIG_BRAND "HLA-JAK2 2020-02-02"
+ENV GALAXY_CONFIG_BRAND "HLA-JAK2 2020-06-02"
 
 # Fix conda
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
