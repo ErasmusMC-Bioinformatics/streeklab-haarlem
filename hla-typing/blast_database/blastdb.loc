@@ -42,4 +42,4 @@
 #
 # See also blastdb_p.loc which is for any protein BLAST database, and
 # blastdb_d.loc which is for any protein domains databases (like CDD).
-hla	IMGT/HLA	/blast/hla
+hla	IMGT/HLA	/blast/hla/blastdb
