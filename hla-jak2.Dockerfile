@@ -2,8 +2,6 @@ FROM bgruening/galaxy-stable:18.09
 
 MAINTAINER Saskia Hiltemann (zazkia@gmail.com), David van Zessen (d.vanzessen@erasmusmc.nl)
 
-ENV GALAXY_CONFIG_BRAND "HLA-JAK2 2020-06-02"
-
 # Fix conda
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL "True"
 ENV GALAXY_CONFIG_CONDA_AUTO_INIT "True"
@@ -52,6 +50,8 @@ ADD hla-typing/blast_database/blastdb.loc /galaxy-central/tool-data/blastdb.loc
 
 # install bcftools to save time on startup
 RUN /tool_deps/_conda/bin/python /export/tool_deps/_conda/bin/conda create -y --override-channels --channel iuc --channel conda-forge --channel bioconda --channel defaults --name __bcftools@1.5 bcftools=1.5
+
+ENV GALAXY_CONFIG_BRAND "HLA-JAK2 [2020-06-03]"
 
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 
