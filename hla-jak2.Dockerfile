@@ -51,7 +51,10 @@ ADD hla-typing/blast_database/blastdb.loc /galaxy-central/tool-data/blastdb.loc
 # install bcftools to save time on startup
 RUN /tool_deps/_conda/bin/python /export/tool_deps/_conda/bin/conda create -y --override-channels --channel iuc --channel conda-forge --channel bioconda --channel defaults --name __bcftools@1.5 bcftools=1.5
 
-ENV GALAXY_CONFIG_BRAND "HLA-JAK2 [2020-06-03]"
+# fix ireport
+RUN sed -i 's|tool_deps/environment_settings/REPOSITORY_PATH/\(.*\);|shed_tools/toolshed.g2.bx.psu.edu/repos/\1/ireport/;|g' /export/tool_deps/environment_settings/REPOSITORY_PATH/saskia-hiltemann/ireport/*/env.sh
+
+ENV GALAXY_CONFIG_BRAND "HLA-JAK2 [2020-06-04]"
 
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 
