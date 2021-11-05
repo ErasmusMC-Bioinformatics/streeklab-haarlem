@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="iframe-resizer/js/iframeResizer.contentWindow.min.js"></script> 
+<script>
+
+    <!-- data tables -->
+		$(document).ready(function() {
+    		$('#datatable').dataTable( {
+    			"bPaginate": false,
+        		"bLengthChange": false,
+        		"bFilter": false,
+        		"bSort": false,
+        		"bInfo": false,
+        		"bAutoWidth": false    		
+    		} );
+		} );
+	<!-- data tables tsv2html_simple.pl -->   
+</script>
+
+<link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
+</head>
+<body>
+<table class="display dataTable" id="datatable" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;" > 
+<thead>
+<tr><th>
+group</th><th>710686226252</th><th>710686226352</th><th>710687421551</th><th>710687421651</th><th>710687421751</th><th>710687421851</th><th>710687421951</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>ace</td><td>0.000000</td><td>4.000000</td><td>5.000000</td><td>0.000000</td><td>0.000000</td><td>5.379009</td><td>0.000000
+</td></tr>
+<tr>
+<td>ace_lci</td><td>0.000000</td><td>4.000000</td><td>5.000000</td><td>0.000000</td><td>0.000000</td><td>5.026677</td><td>0.000000
+</td></tr>
+<tr>
+<td>ace_hci</td><td>0.000000</td><td>4.000000</td><td>5.000000</td><td>0.000000</td><td>0.000000</td><td>10.384705</td><td>0.000000
+</td></tr>
+<tr>
+<td>chao</td><td>6.000000</td><td>4.000000</td><td>5.000000</td><td>4.000000</td><td>4.000000</td><td>5.000000</td><td>4.000000
+</td></tr>
+<tr>
+<td>chao_lci</td><td>3.379609</td><td>4.000000</td><td>5.000000</td><td>4.000000</td><td>4.000000</td><td>5.000000</td><td>4.000000
+</td></tr>
+<tr>
+<td>chao_hci</td><td>26.708576</td><td>4.000000</td><td>5.000000</td><td>4.000000</td><td>4.000000</td><td>0.000000</td><td>4.000000
+</td></tr>
+<tr>
+<td>jackknife</td><td>6.000000</td><td>0.000000</td><td>0.000000</td><td>4.000000</td><td>4.000000</td><td>0.000000</td><td>4.000000
+</td></tr>
+<tr>
+<td>jackknife_lci</td><td>1.199000</td><td>0.000000</td><td>0.000000</td><td>4.000000</td><td>4.000000</td><td>0.000000</td><td>4.000000
+</td></tr>
+<tr>
+<td>jackknife_hci</td><td>10.801000</td><td>0.000000</td><td>0.000000</td><td>4.000000</td><td>4.000000</td><td>0.000000</td><td>4.000000
+</td></tr>
+<tr>
+<td>sobs</td><td>3.000000</td><td>4.000000</td><td>5.000000</td><td>4.000000</td><td>4.000000</td><td>5.000000</td><td>4.000000
+</td></tr>
+<tr>
+<td>simpson</td><td>0.000000</td><td>0.499219</td><td>0.282583</td><td>0.261466</td><td>0.301947</td><td>0.190476</td><td>0.299292
+</td></tr>
+<tr>
+<td>simpson_lci</td><td>0.000000</td><td>0.497508</td><td>0.257853</td><td>0.257113</td><td>0.285601</td><td>0.106748</td><td>0.287768
+</td></tr>
+<tr>
+<td>simpson_hci</td><td>0.000000</td><td>0.500930</td><td>0.307313</td><td>0.265818</td><td>0.318293</td><td>0.274204</td><td>0.310816
+</td></tr>
+<tr>
+<td>shannon</td><td>1.098612</td><td>0.705904</td><td>1.373944</td><td>1.360745</td><td>1.293008</td><td>1.489750</td><td>1.291000
+</td></tr>
+<tr>
+<td>shannon_lci</td><td>0.445279</td><td>0.698653</td><td>1.310193</td><td>1.350880</td><td>1.265079</td><td>1.198841</td><td>1.269433
+</td></tr>
+<tr>
+<td>shannon_hci</td><td>1.751946</td><td>0.713155</td><td>1.437695</td><td>1.370611</td><td>1.320938</td><td>1.780660</td><td>1.312568
+</td></tr>
+<tr>
+<td>npshannon</td><td>0.000000</td><td>0.705964</td><td>1.373955</td><td>1.360745</td><td>1.293008</td><td>1.623258</td><td>1.291000
+</td></tr>
+</tbody>
+</table></body></html>

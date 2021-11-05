@@ -1,0 +1,108 @@
+<!doctype html>
+ <head>
+  <meta charset="utf-8">
+  <title>iReport</title>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="ireport_css.css">
+  <link rel="stylesheet" href="md.css">
+  <script type="text/javascript" src="jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="jquery-ui.js"></script>	
+  <script type="text/javascript" src="iframe-resizer/src/iframeResizer.js"></script> 
+  <script type="text/javascript" src="jquery.zoom.js"></script>
+  <script type="text/javascript" src="ireport_jquery.js"></script>
+  <script type="text/javascript" src="ireport_javascript.js"></script>
+ </head>
+ <body>
+  <div id="tabs" style="display:inline-block; min-height:100%; min-width:1500px">
+  <ul>
+ <li><a href="#tabs-1">Taxonomy</a></li>
+ <li><a href="#tabs-2">Rarefaction</a></li>
+ <li><a href="#tabs-3">Diversity</a></li>
+ <li><a href="#tabs-4">Quality&#32;Control</a></li>
+</ul>
+
+  
+<div id="tabs-1">
+
+<iframe  class="invisibleframe" src="dataset_42026.html" width="100%" height="750px"></iframe>
+<br/>
+
+<div class="markdown-body"> <h2>OTUs at level 0.03</h2></div>
+
+<iframe class="invisibleframe fancyiframe" id="iframe-j7U2TYat" src="htmltable_dataset_42028.html" width="100%" style="height: 350px; min-height: 350px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-j7U2TYat")></iframe><br/>
+
+&emsp;<em>NOTE&#58; Click on column headers to sort table</em><br/><br/>&emsp;&emsp;Download this OTU table 
+<a href="dataset_42028.dat">here</a>
+<div class="markdown-body"> <h2>OTU Representatives</h2></div>
+
+&emsp;&emsp;Download result file (fasta) with representative sequences 
+<a href="dataset_42018.dat">here</a>
+</div>
+
+<div id="tabs-2">
+<span id="img1"> <img src="dataset_42045.png"  width="500" alt="loading image.."/></span><br/>
+
+<iframe class="invisibleframe fancyiframe" id="iframe-2zWOGF37" src="htmltable_dataset_42042.html" width="100%" style="height: 350px; min-height: 500px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-2zWOGF37")></iframe>
+</div>
+
+<div id="tabs-3">
+
+<iframe class="unfancyiframe invisibleframe" id="iframe-mERnzCcp" src="htmltable_dataset_42031.html" scrolling="no" style="min-width: 1000px; min-height: 0px !important; max-width: 100%; vertical-align: top;" onClick=resizeIframe("iframe-mERnzCcp") ></iframe>
+</div>
+
+<div id="tabs-4">
+
+<div class="markdown-body"> <h2>Trimming, Alignment and Chimera Filtering</h2>
+
+<p>A number of trimming and filtering steps were performed in this analysis</p>
+
+<ol>
+<li>Trim with oligos file</li>
+<li>Trim with minlength=200, keepfirst=300</li>
+<li>Trim poorly called nucleotides</li>
+<li>Align unique sequences with an adaptation of the Bacterial SILVA SEED database release v119</li>
+<li>Remove chimeric sequences using the Uchime source code</li>
+</ol>
+
+<h2>Number of reads removed at each filtering step</h2></div>
+<br/>
+
+<iframe class="unfancyiframe invisibleframe" id="iframe-wGwKe0kB" src="htmltable_dataset_41940.html" scrolling="no" style="min-width: 1600px; min-height: 0px !important; max-width: 100%; vertical-align: top;" onClick=resizeIframe("iframe-wGwKe0kB") ></iframe><br/>
+
+<div class="markdown-body"> <h2>Removed sequences at each step&#58;</h2></div>
+
+&emsp;&emsp;Removed sequences due to lack primer of sequences&#58; 
+<a href="dataset_41896.dat">scrap.fasta</a><br/>
+
+&emsp;&emsp;Removed sequences by length&#58; 
+<a href="dataset_41904.dat">bad..accnos</a><br/>
+
+&emsp;&emsp;Removed sequences due to low quality base calls&#58;
+<a href="dataset_41909.dat">bad.accnos</a><br/>
+
+&emsp;&emsp;Removed accession numbers that did not align&#58; 
+<a href="dataset_41918.dat">bad.accnos</a><br/>
+
+&emsp;&emsp;Removed accession numbers that contain chimeric sequences&#58; 
+<a href="dataset_41929.dat">uchime.accnos</a><br/>
+
+&emsp;&emsp;OTUtable per replicate
+<a href="dataset_42022.dat">OTUtable</a><br/>
+
+<div class="markdown-body"> <h3>OTU tables per sample with all replicates</h3>
+
+<p>(counts are sequences, not copies)</p></div>
+
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42032.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42033.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42034.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42035.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42036.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42037.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42038.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+<iframe class="invisibleframe fancyiframe" id="iframe-wGwKe0kB" src="htmltable_dataset_42039.html" width="100%" style="height: 350px; min-height: 0px !important; overflow-y: hidden; overflow-x: scroll" onClick=resizeIframe("iframe-wGwKe0kB")></iframe>
+</div>
+
+  </div>
+ </body>
+</html>

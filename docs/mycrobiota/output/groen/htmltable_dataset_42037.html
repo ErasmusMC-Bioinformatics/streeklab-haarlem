@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="iframe-resizer/js/iframeResizer.contentWindow.min.js"></script> 
+<script>
+
+    <!-- data tables -->
+		$(document).ready(function() {
+    		$('#datatable').dataTable( {
+    			"bPaginate": true,
+        		"bLengthChange": true,
+        		"bFilter": true,
+        		"bSort": true,
+        		"bInfo": true,
+        		"bAutoWidth": true    		
+    		} );
+		} );
+	<!-- data tables tsv2html.pl-->   
+</script>
+
+<link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
+</head>
+<body>
+<table class="display dataTable" id="datatable" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;" > 
+<thead>
+<tr><th>
+OTU</th><th>710687421851_replicate1_S59_L001_001.fastq</th><th>710687421851_replicate2_S60_L001_001.fastq</th><th>710687421851_replicate3_S61_L001_001.fastq</th><th>mean</th><th>Kingdom</th><th>Phylum</th><th>Class</th><th>Order</th><th>Family</th><th>Genus</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>  Otu0001 </td><td align="right">4162</td><td align="right">6612</td><td align="right">7011</td><td align="right">5928</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Burkholderiaceae</td><td>Burkholderia
+</td></tr>
+<tr>
+<td>  Otu0002 </td><td align="right">19</td><td align="right">70</td><td align="right">80</td><td align="right">56</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Bacillales</td><td>Staphylococcaceae</td><td>Staphylococcus
+</td></tr>
+<tr>
+<td>  Otu0003 </td><td align="right">205</td><td align="right">323</td><td align="right">418</td><td align="right">315</td><td>Bacteria</td><td>Cyanobacteria</td><td>Cyanobacteria</td><td>SubsectionIII</td><td>FamilyI</td><td>Oscillatoria
+</td></tr>
+<tr>
+<td>  Otu0004 </td><td align="right">69</td><td align="right">246</td><td align="right">101</td><td align="right">139</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Oxalobacteraceae</td><td>Undibacterium
+</td></tr>
+<tr>
+<td>  Otu0005 </td><td align="right">25</td><td align="right">15</td><td align="right">47</td><td align="right">29</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhodobacterales</td><td>Rhodobacteraceae</td><td>Rhodobacteraceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0006 </td><td align="right">2</td><td align="right">24</td><td align="right">13</td><td align="right">13</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Sphingomonadales</td><td>Sphingomonadales_unclassified</td><td>Sphingomonadales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0007 </td><td align="right">16</td><td align="right">1</td><td align="right">0</td><td align="right">6</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhodobacterales</td><td>Rhodobacteraceae</td><td>Paracocccus
+</td></tr>
+<tr>
+<td>  Otu0008 </td><td align="right">9</td><td align="right">2</td><td align="right">5</td><td align="right">5</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Moraxellaceae</td><td>Moraxella
+</td></tr>
+<tr>
+<td>  Otu0009 </td><td align="right">1</td><td align="right">0</td><td align="right">9</td><td align="right">3</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Moraxellaceae</td><td>Acinetobacter
+</td></tr>
+<tr>
+<td>  Otu0010 </td><td align="right">35</td><td align="right">48</td><td align="right">27</td><td align="right">37</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Corynebacterium_1
+</td></tr>
+<tr>
+<td>  Otu0011 </td><td align="right">2</td><td align="right">62</td><td align="right">45</td><td align="right">36</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Alphaproteobacteria_unclassified</td><td>Alphaproteobacteria_unclassified</td><td>Alphaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0012 </td><td align="right">4</td><td align="right">3</td><td align="right">5</td><td align="right">4</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pasteurellales</td><td>Pasteurellaceae</td><td>Haemophilus
+</td></tr>
+<tr>
+<td>  Otu0014 </td><td align="right">0</td><td align="right">42</td><td align="right">10</td><td align="right">17</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Turicella
+</td></tr>
+<tr>
+<td>  Otu0015 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Micrococcales</td><td>Micrococcaceae</td><td>Micrococcus
+</td></tr>
+<tr>
+<td>  Otu0017 </td><td align="right">0</td><td align="right">34</td><td align="right">7</td><td align="right">14</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhodospirillales</td><td>Acetobacteraceae</td><td>Acetobacter
+</td></tr>
+<tr>
+<td>  Otu0018 </td><td align="right">9</td><td align="right">3</td><td align="right">3</td><td align="right">5</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Carnobacteriaceae</td><td>Atopostipes
+</td></tr>
+<tr>
+<td>  Otu0019 </td><td align="right">5</td><td align="right">0</td><td align="right">30</td><td align="right">12</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Actinobacteria_unclassified</td><td>Actinobacteria_unclassified</td><td>Actinobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0021 </td><td align="right">9</td><td align="right">1</td><td align="right">1</td><td align="right">4</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Enterococcaceae</td><td>Enterococcus
+</td></tr>
+<tr>
+<td>  Otu0024 </td><td align="right">45</td><td align="right">12</td><td align="right">0</td><td align="right">19</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Burkholderiaceae</td><td>Cupriavidus
+</td></tr>
+<tr>
+<td>  Otu0026 </td><td align="right">0</td><td align="right">0</td><td align="right">4</td><td align="right">1</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Micrococcales</td><td>Micrococcaceae</td><td>Rothia
+</td></tr>
+<tr>
+<td>  Otu0027 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Micrococcales</td><td>Microbacteriaceae</td><td>Microbacteriaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0028 </td><td align="right">17</td><td align="right">8</td><td align="right">22</td><td align="right">16</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Pseudomonadaceae</td><td>Pseudomonadaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0033 </td><td align="right">0</td><td align="right">15</td><td align="right">4</td><td align="right">6</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Pseudomonadaceae</td><td>Pseudomonas
+</td></tr>
+<tr>
+<td>  Otu0037 </td><td align="right">28</td><td align="right">5</td><td align="right">1</td><td align="right">11</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhizobiales</td><td>Rhizobiales_Incertae_Sedis</td><td>Phreatobacter
+</td></tr>
+<tr>
+<td>  Otu0038 </td><td align="right">11</td><td align="right">13</td><td align="right">4</td><td align="right">9</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Corynebacteriaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0040 </td><td align="right">8</td><td align="right">0</td><td align="right">30</td><td align="right">13</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Micrococcales</td><td>Microbacteriaceae</td><td>Pseudoclavibacter
+</td></tr>
+<tr>
+<td>  Otu0041 </td><td align="right">0</td><td align="right">0</td><td align="right">35</td><td align="right">12</td><td>Bacteria</td><td>Actinobacteria</td><td>Rubrobacteria</td><td>Rubrobacterales</td><td>Rubrobacteriaceae</td><td>Rubrobacter
+</td></tr>
+<tr>
+<td>  Otu0042 </td><td align="right">0</td><td align="right">31</td><td align="right">5</td><td align="right">12</td><td>Bacteria</td><td>Cyanobacteria</td><td>Melainabacteria</td><td>Obscuribacterales</td><td>Obscuribacterales_unclassified</td><td>Obscuribacterales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0044 </td><td align="right">3</td><td align="right">1</td><td align="right">1</td><td align="right">2</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Streptococcaceae</td><td>Streptococcus
+</td></tr>
+<tr>
+<td>  Otu0046 </td><td align="right">6</td><td align="right">1</td><td align="right">0</td><td align="right">2</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Neisseriales</td><td>Neisseriaceae</td><td>Aquaspirillum
+</td></tr>
+<tr>
+<td>  Otu0047 </td><td align="right">0</td><td align="right">26</td><td align="right">3</td><td align="right">10</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Carnobacteriaceae</td><td>Granulicatella
+</td></tr>
+<tr>
+<td>  Otu0048 </td><td align="right">2</td><td align="right">2</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Bacillales</td><td>Bacillales_unclassified</td><td>Bacillales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0049 </td><td align="right">0</td><td align="right">19</td><td align="right">4</td><td align="right">8</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Streptococcaceae</td><td>Lactococcus
+</td></tr>
+<tr>
+<td>  Otu0054 </td><td align="right">0</td><td align="right">0</td><td align="right">17</td><td align="right">6</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Neisseriales</td><td>Neisseriaceae</td><td>Aquitalea
+</td></tr>
+<tr>
+<td>  Otu0058 </td><td align="right">0</td><td align="right">0</td><td align="right">17</td><td align="right">6</td><td>Bacteria</td><td>Bacteroidetes</td><td>Bacteroidia</td><td>Bacteroidales</td><td>Prevotellaceae</td><td>Prevotella_7
+</td></tr>
+<tr>
+<td>  Otu0061 </td><td align="right">0</td><td align="right">0</td><td align="right">11</td><td align="right">4</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>DR-16</td><td>DR-16_unclassified</td><td>DR-16_unclassified
+</td></tr>
+<tr>
+<td>  Otu0063 </td><td align="right">0</td><td align="right">12</td><td align="right">1</td><td align="right">4</td><td>Bacteria</td><td>Firmicutes</td><td>Clostridia</td><td>Clostridiales</td><td>Family_XI</td><td>Murdochiella
+</td></tr>
+<tr>
+<td>  Otu0067 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Bifidobacteriales</td><td>Bifidobacteriaceae</td><td>Bifidobacterium
+</td></tr>
+<tr>
+<td>  Otu0069 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Firmicutes</td><td>Negativicutes</td><td>Selenomonadales</td><td>Veillonellaceae</td><td>Veillonella
+</td></tr>
+<tr>
+<td>  Otu0070 </td><td align="right">0</td><td align="right">0</td><td align="right">6</td><td align="right">2</td><td>Bacteria</td><td>Firmicutes</td><td>Clostridia</td><td>Clostridiales</td><td>Family_XI</td><td>Peptoniphilus
+</td></tr>
+<tr>
+<td>  Otu0071 </td><td align="right">0</td><td align="right">5</td><td align="right">2</td><td align="right">2</td><td>Bacteria</td><td>Bacteroidetes</td><td>Sphingobacteriia</td><td>Sphingobacteriales</td><td>Chitinophagaceae</td><td>Hydrotalea
+</td></tr>
+<tr>
+<td>  Otu0073 </td><td align="right">0</td><td align="right">0</td><td align="right">5</td><td align="right">2</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhizobiales</td><td>Rhizobiales_unclassified</td><td>Rhizobiales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0078 </td><td align="right">3</td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Xanthomonadales</td><td>Xanthomonadaceae</td><td>Xanthomonadaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0080 </td><td align="right">2</td><td align="right">1</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Corynebacterium_1
+</td></tr>
+<tr>
+<td>  Otu0085 </td><td align="right">0</td><td align="right">2</td><td align="right">1</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0087 </td><td align="right">0</td><td align="right">2</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhizobiales</td><td>Xanthobacteraceae</td><td>Pseudolabrys
+</td></tr>
+<tr>
+<td>  Otu0088 </td><td align="right">0</td><td align="right">2</td><td align="right">1</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Comamonadaceae</td><td>Curvibacter
+</td></tr>
+<tr>
+<td>  Otu0098 </td><td align="right">0</td><td align="right">0</td><td align="right">2</td><td align="right">1</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Micrococcales</td><td>Dermabacteraceae</td><td>Brachybacterium
+</td></tr>
+<tr>
+<td>  Otu0103 </td><td align="right">0</td><td align="right">2</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Micrococcales</td><td>Dermacoccaceae</td><td>Dermacoccus
+</td></tr>
+<tr>
+<td>  Otu0110 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0116 </td><td align="right">0</td><td align="right">1</td><td align="right">1</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0117 </td><td align="right">1</td><td align="right">1</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0120 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Cyanobacteria</td><td>Cyanobacteria</td><td>Cyanobacteria_unclassified</td><td>Cyanobacteria_unclassified</td><td>Cyanobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0304 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0305 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Cyanobacteria</td><td>Melainabacteria</td><td>Obscuribacterales</td><td>Obscuribacterales_unclassified</td><td>Obscuribacterales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0307 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0308 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0309 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0311 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0312 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0313 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Proteobacteria_unclassified</td><td>Proteobacteria_unclassified</td><td>Proteobacteria_unclassified</td><td>Proteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0314 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0316 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Proteobacteria_unclassified</td><td>Proteobacteria_unclassified</td><td>Proteobacteria_unclassified</td><td>Proteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0317 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0318 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0319 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Moraxellaceae</td><td>Psychrobacter
+</td></tr>
+<tr>
+<td>  Otu0320 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0321 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0323 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Bacteria_unclassified</td><td>Bacteria_unclassified</td><td>Bacteria_unclassified</td><td>Bacteria_unclassified</td><td>Bacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0324 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0325 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0327 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0328 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Gammaproteobacteria_unclassified</td><td>Gammaproteobacteria_unclassified</td><td>Gammaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0329 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0330 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0332 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0334 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Cyanobacteria</td><td>Melainabacteria</td><td>Obscuribacterales</td><td>Obscuribacterales_unclassified</td><td>Obscuribacterales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0335 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Turicella
+</td></tr>
+<tr>
+<td>  Otu0336 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0337 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0338 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0339 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0340 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0341 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0342 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Cyanobacteria</td><td>Cyanobacteria</td><td>Cyanobacteria_unclassified</td><td>Cyanobacteria_unclassified</td><td>Cyanobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0343 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0344 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0345 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0346 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0347 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0348 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0349 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0350 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0352 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0353 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0354 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0355 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0356 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0357 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0358 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0359 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0362 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0363 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0364 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0366 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0367 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0379 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0380 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0381 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0384 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Cyanobacteria</td><td>Cyanobacteria</td><td>SubsectionIII</td><td>FamilyI</td><td>Oscillatoria
+</td></tr>
+<tr>
+<td>  Otu0385 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0386 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0388 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0390 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0392 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0393 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Gammaproteobacteria_unclassified</td><td>Gammaproteobacteria_unclassified</td><td>Gammaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0394 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0395 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0396 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0397 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0398 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0399 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Firmicutes</td><td>Clostridia</td><td>Clostridiales</td><td>Family_XI</td><td>Anaerococcus
+</td></tr>
+<tr>
+<td>  Otu0400 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0401 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0402 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0452 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0453 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0454 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0455 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0456 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0458 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0459 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0460 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0461 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0462 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0463 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0464 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0467 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0468 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0469 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhodobacterales</td><td>Rhodobacteraceae</td><td>Rhodobacteraceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0470 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0471 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0472 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0473 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0474 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0476 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Comamonadaceae</td><td>Comamonadaceae_unclassified
+</td></tr>
+</tbody>
+</table></body></html>

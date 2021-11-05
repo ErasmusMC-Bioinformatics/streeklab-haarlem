@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="iframe-resizer/js/iframeResizer.contentWindow.min.js"></script> 
+<script>
+
+    <!-- data tables -->
+		$(document).ready(function() {
+    		$('#datatable').dataTable( {
+    			"bPaginate": false,
+        		"bLengthChange": false,
+        		"bFilter": false,
+        		"bSort": false,
+        		"bInfo": false,
+        		"bAutoWidth": false    		
+    		} );
+		} );
+	<!-- data tables tsv2html_simple.pl -->   
+</script>
+
+<link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
+</head>
+<body>
+<table class="display dataTable" id="datatable" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;" > 
+<thead>
+<tr><th>
+step</th><th>total</th><th>710686226252_replicate1_S44_L001_001.fastq</th><th>710686226252_replicate2_S45_L001_001.fastq</th><th>710686226252_replicate3_S46_L001_001.fastq</th><th>710686226352_replicate1_S47_L001_001.fastq</th><th>710686226352_replicate2_S48_L001_001.fastq</th><th>710686226352_replicate3_S49_L001_001.fastq</th><th>710687421551_replicate1_S50_L001_001.fastq</th><th>710687421551_replicate2_S51_L001_001.fastq</th><th>710687421551_replicate3_S52_L001_001.fastq</th><th>710687421651_replicate1_S53_L001_001.fastq</th><th>710687421651_replicate2_S54_L001_001.fastq</th><th>710687421651_replicate3_S55_L001_001.fastq</th><th>710687421751_replicate1_S56_L001_001.fastq</th><th>710687421751_replicate2_S57_L001_001.fastq</th><th>710687421751_replicate3_S58_L001_001.fastq</th><th>710687421851_replicate1_S59_L001_001.fastq</th><th>710687421851_replicate2_S60_L001_001.fastq</th><th>710687421851_replicate3_S61_L001_001.fastq</th><th>710687421951_replicate1_S62_L001_001.fastq</th><th>710687421951_replicate2_S63_L001_001.fastq</th><th>710687421951_replicate3_S64_L001_001.fastq</th><th>NC200116070651_replicate1_S11_L001_001.fastq</th><th>NC200116070651_replicate2_S12_L001_001.fastq</th><th>NC200116070651_replicate3_S13_L001_001.fastq</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw Sequences</td><td align="right">195,414</td><td align="right">7,821</td><td align="right">20,000</td><td align="right">18,840</td><td align="right">20,000</td><td align="right">20,000</td><td align="right">12,591</td><td align="right">932</td><td align="right">821</td><td align="right">1,767</td><td align="right">1,282</td><td align="right">393</td><td align="right">1,473</td><td align="right">352</td><td align="right">230</td><td align="right">296</td><td align="right">6,449</td><td align="right">9,595</td><td align="right">10,974</td><td align="right">1,362</td><td align="right">99</td><td align="right">137</td><td align="right">20,000</td><td align="right">20,000</td><td align="right">20,000
+</td></tr>
+<tr>
+<td>Trimming primer sequences</td><td>176802 (-18612; -9.5%)</td><td>6931 (-890; -11.4%)</td><td>18177 (-1823; -9.1%)</td><td>17172 (-1668; -8.9%)</td><td>18358 (-1642; -8.2%)</td><td>18384 (-1616; -8.1%)</td><td>11527 (-1064; -8.5%)</td><td>823 (-109; -11.7%)</td><td>729 (-92; -11.2%)</td><td>1562 (-205; -11.6%)</td><td>1155 (-127; -9.9%)</td><td>320 (-73; -18.6%)</td><td>1256 (-217; -14.7%)</td><td>314 (-38; -10.8%)</td><td>200 (-30; -13.0%)</td><td>251 (-45; -15.2%)</td><td>5902 (-547; -8.5%)</td><td>8756 (-839; -8.7%)</td><td>9897 (-1077; -9.8%)</td><td>1236 (-126; -9.3%)</td><td>80 (-19; -19.2%)</td><td>115 (-22; -16.1%)</td><td>18135 (-1865; -9.3%)</td><td>17835 (-2165; -10.8%)</td><td>17687 (-2313; -11.6%)
+</td></tr>
+<tr>
+<td>Trimming based on length</td><td>172578 (-4224; -2.4%)</td><td>6928 (-3; -0.0%)</td><td>18168 (-9; -0.0%)</td><td>17170 (-2; -0.0%)</td><td>18352 (-6; -0.0%)</td><td>18349 (-35; -0.2%)</td><td>11468 (-59; -0.5%)</td><td>715 (-108; -13.1%)</td><td>616 (-113; -15.5%)</td><td>969 (-593; -38.0%)</td><td>1137 (-18; -1.6%)</td><td>93 (-227; -70.9%)</td><td>125 (-1131; -90.0%)</td><td>313 (-1; -0.3%)</td><td>200 (0; 0.0%)</td><td>250 (-1; -0.4%)</td><td>5798 (-104; -1.8%)</td><td>8367 (-389; -4.4%)</td><td>9549 (-348; -3.5%)</td><td>1179 (-57; -4.6%)</td><td>53 (-27; -33.8%)</td><td>82 (-33; -28.7%)</td><td>18128 (-7; -0.0%)</td><td>17185 (-650; -3.6%)</td><td>17384 (-303; -1.7%)
+</td></tr>
+<tr>
+<td>Trimming with maxambig</td><td>170128 (-2450; -1.4%)</td><td>6768 (-160; -2.3%)</td><td>17916 (-252; -1.4%)</td><td>16952 (-218; -1.3%)</td><td>18106 (-246; -1.3%)</td><td>18091 (-258; -1.4%)</td><td>11332 (-136; -1.2%)</td><td>700 (-15; -2.1%)</td><td>598 (-18; -2.9%)</td><td>939 (-30; -3.1%)</td><td>1119 (-18; -1.6%)</td><td>92 (-1; -1.1%)</td><td>121 (-4; -3.2%)</td><td>309 (-4; -1.3%)</td><td>199 (-1; -0.5%)</td><td>249 (-1; -0.4%)</td><td>5687 (-111; -1.9%)</td><td>8240 (-127; -1.5%)</td><td>9379 (-170; -1.8%)</td><td>1161 (-18; -1.5%)</td><td>52 (-1; -1.9%)</td><td>82 (0; 0.0%)</td><td>17913 (-215; -1.2%)</td><td>16969 (-216; -1.3%)</td><td>17154 (-230; -1.3%)
+</td></tr>
+<tr>
+<td>alignment</td><td>165890 (-4238; -2.5%)</td><td>6767 (-1; -0.0%)</td><td>17910 (-6; -0.0%)</td><td>16944 (-8; -0.0%)</td><td>18043 (-63; -0.3%)</td><td>18016 (-75; -0.4%)</td><td>11245 (-87; -0.8%)</td><td>509 (-191; -27.3%)</td><td>384 (-214; -35.8%)</td><td>534 (-405; -43.1%)</td><td>893 (-226; -20.2%)</td><td>92 (0; 0.0%)</td><td>121 (0; 0.0%)</td><td>295 (-14; -4.5%)</td><td>196 (-3; -1.5%)</td><td>219 (-30; -12.0%)</td><td>4739 (-948; -16.7%)</td><td>7720 (-520; -6.3%)</td><td>8065 (-1314; -14.0%)</td><td>1038 (-123; -10.6%)</td><td>49 (-3; -5.8%)</td><td>75 (-7; -8.5%)</td><td>17913 (0; 0.0%)</td><td>16969 (0; 0.0%)</td><td>17154 (0; 0.0%)
+</td></tr>
+<tr>
+<td>Chimera Removal</td><td>162236 (-3654; -2.2%)</td><td>6695 (-72; -1.1%)</td><td>17210 (-700; -3.9%)</td><td>16418 (-526; -3.1%)</td><td>17720 (-323; -1.8%)</td><td>17694 (-322; -1.8%)</td><td>10969 (-276; -2.5%)</td><td>509 (0; 0.0%)</td><td>384 (0; 0.0%)</td><td>533 (-1; -0.2%)</td><td>893 (0; 0.0%)</td><td>92 (0; 0.0%)</td><td>121 (0; 0.0%)</td><td>295 (0; 0.0%)</td><td>196 (0; 0.0%)</td><td>219 (0; 0.0%)</td><td>4734 (-5; -0.1%)</td><td>7683 (-37; -0.5%)</td><td>8032 (-33; -0.4%)</td><td>1038 (0; 0.0%)</td><td>49 (0; 0.0%)</td><td>75 (0; 0.0%)</td><td>17532 (-381; -2.1%)</td><td>16639 (-330; -1.9%)</td><td>16506 (-648; -3.8%)
+</td></tr>
+<tr>
+<td>Remove non-bacterial</td><td>162055 (-181; -0.1%)</td><td>6695 (0; 0.0%)</td><td>17210 (0; 0.0%)</td><td>16377 (-41; -0.2%)</td><td>17720 (0; 0.0%)</td><td>17694 (0; 0.0%)</td><td>10958 (-11; -0.1%)</td><td>509 (0; 0.0%)</td><td>384 (0; 0.0%)</td><td>532 (-1; -0.2%)</td><td>893 (0; 0.0%)</td><td>92 (0; 0.0%)</td><td>121 (0; 0.0%)</td><td>295 (0; 0.0%)</td><td>196 (0; 0.0%)</td><td>219 (0; 0.0%)</td><td>4722 (-12; -0.3%)</td><td>7681 (-2; -0.0%)</td><td>8030 (-2; -0.0%)</td><td>1038 (0; 0.0%)</td><td>49 (0; 0.0%)</td><td>75 (0; 0.0%)</td><td>17441 (-91; -0.5%)</td><td>16624 (-15; -0.1%)</td><td>16500 (-6; -0.0%)
+</td></tr>
+</tbody>
+</table></body></html>

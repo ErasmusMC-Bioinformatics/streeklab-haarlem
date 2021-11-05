@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="iframe-resizer/js/iframeResizer.contentWindow.min.js"></script> 
+<script>
+
+    <!-- data tables -->
+		$(document).ready(function() {
+    		$('#datatable').dataTable( {
+    			"bPaginate": true,
+        		"bLengthChange": true,
+        		"bFilter": true,
+        		"bSort": true,
+        		"bInfo": true,
+        		"bAutoWidth": true    		
+    		} );
+		} );
+	<!-- data tables tsv2html.pl-->   
+</script>
+
+<link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
+</head>
+<body>
+<table class="display dataTable" id="datatable" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;" > 
+<thead>
+<tr><th>
+OTU</th><th>710687421751_replicate1_S56_L001_001.fastq</th><th>710687421751_replicate2_S57_L001_001.fastq</th><th>710687421751_replicate3_S58_L001_001.fastq</th><th>mean</th><th>Kingdom</th><th>Phylum</th><th>Class</th><th>Order</th><th>Family</th><th>Genus</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>  Otu0001 </td><td align="right">124</td><td align="right">94</td><td align="right">147</td><td align="right">122</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Burkholderiaceae</td><td>Burkholderia
+</td></tr>
+<tr>
+<td>  Otu0002 </td><td align="right">61</td><td align="right">34</td><td align="right">19</td><td align="right">38</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Bacillales</td><td>Staphylococcaceae</td><td>Staphylococcus
+</td></tr>
+<tr>
+<td>  Otu0003 </td><td align="right">8</td><td align="right">7</td><td align="right">7</td><td align="right">7</td><td>Bacteria</td><td>Cyanobacteria</td><td>Cyanobacteria</td><td>SubsectionIII</td><td>FamilyI</td><td>Oscillatoria
+</td></tr>
+<tr>
+<td>  Otu0004 </td><td align="right">5</td><td align="right">3</td><td align="right">2</td><td align="right">3</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Oxalobacteraceae</td><td>Undibacterium
+</td></tr>
+<tr>
+<td>  Otu0005 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhodobacterales</td><td>Rhodobacteraceae</td><td>Rhodobacteraceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0008 </td><td align="right">19</td><td align="right">16</td><td align="right">10</td><td align="right">15</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Moraxellaceae</td><td>Moraxella
+</td></tr>
+<tr>
+<td>  Otu0010 </td><td align="right">2</td><td align="right">0</td><td align="right">1</td><td align="right">1</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Corynebacterium_1
+</td></tr>
+<tr>
+<td>  Otu0012 </td><td align="right">15</td><td align="right">5</td><td align="right">21</td><td align="right">14</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pasteurellales</td><td>Pasteurellaceae</td><td>Haemophilus
+</td></tr>
+<tr>
+<td>  Otu0018 </td><td align="right">22</td><td align="right">9</td><td align="right">6</td><td align="right">12</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Carnobacteriaceae</td><td>Atopostipes
+</td></tr>
+<tr>
+<td>  Otu0019 </td><td align="right">0</td><td align="right">2</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Actinobacteria_unclassified</td><td>Actinobacteria_unclassified</td><td>Actinobacteria_unclassified
+</td></tr>
+<tr>
+<td>  Otu0021 </td><td align="right">6</td><td align="right">2</td><td align="right">0</td><td align="right">3</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Enterococcaceae</td><td>Enterococcus
+</td></tr>
+<tr>
+<td>  Otu0027 </td><td align="right">7</td><td align="right">3</td><td align="right">0</td><td align="right">3</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Micrococcales</td><td>Microbacteriaceae</td><td>Microbacteriaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0037 </td><td align="right">4</td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhizobiales</td><td>Rhizobiales_Incertae_Sedis</td><td>Phreatobacter
+</td></tr>
+<tr>
+<td>  Otu0044 </td><td align="right">0</td><td align="right">1</td><td align="right">2</td><td align="right">1</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Streptococcaceae</td><td>Streptococcus
+</td></tr>
+<tr>
+<td>  Otu0048 </td><td align="right">10</td><td align="right">12</td><td align="right">0</td><td align="right">7</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Bacillales</td><td>Bacillales_unclassified</td><td>Bacillales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0059 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Acidimicrobiia</td><td>Acidimicrobiales</td><td>Iamiaceae</td><td>Iamia
+</td></tr>
+<tr>
+<td>  Otu0067 </td><td align="right">3</td><td align="right">2</td><td align="right">0</td><td align="right">2</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Bifidobacteriales</td><td>Bifidobacteriaceae</td><td>Bifidobacterium
+</td></tr>
+<tr>
+<td>  Otu0069 </td><td align="right">1</td><td align="right">0</td><td align="right">2</td><td align="right">1</td><td>Bacteria</td><td>Firmicutes</td><td>Negativicutes</td><td>Selenomonadales</td><td>Veillonellaceae</td><td>Veillonella
+</td></tr>
+<tr>
+<td>  Otu0074 </td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Pseudomonadaceae</td><td>Pseudomonadaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0075 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhizobiales</td><td>Phyllobacteriaceae</td><td>Phyllobacteriaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0078 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Xanthomonadales</td><td>Xanthomonadaceae</td><td>Xanthomonadaceae_unclassified
+</td></tr>
+<tr>
+<td>  Otu0091 </td><td align="right">1</td><td align="right">2</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Corynebacterium_1
+</td></tr>
+<tr>
+<td>  Otu0092 </td><td align="right">2</td><td align="right">1</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Firmicutes</td><td>Clostridia</td><td>Thermoanaerobacterales</td><td>Family_III</td><td>Thermoanaerobacterium
+</td></tr>
+<tr>
+<td>  Otu0094 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Acidimicrobiia</td><td>Acidimicrobiales</td><td>Acidimicrobiaceae</td><td>Illumatobacter
+</td></tr>
+<tr>
+<td>  Otu0108 </td><td align="right">2</td><td align="right">0</td><td align="right">0</td><td align="right">1</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Moraxellaceae</td><td>Moraxella
+</td></tr>
+<tr>
+<td>  Otu0465 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhizobiales</td><td>Rhizobiales_unclassified</td><td>Rhizobiales_unclassified
+</td></tr>
+<tr>
+<td>  Otu0500 </td><td align="right">0</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified</td><td>Betaproteobacteria_unclassified
+</td></tr>
+</tbody>
+</table></body></html>

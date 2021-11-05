@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="iframe-resizer/js/iframeResizer.contentWindow.min.js"></script> 
+<script>
+
+    <!-- data tables -->
+		$(document).ready(function() {
+    		$('#datatable').dataTable( {
+    			"bPaginate": true,
+        		"bLengthChange": true,
+        		"bFilter": true,
+        		"bSort": true,
+        		"bInfo": true,
+        		"bAutoWidth": true    		
+    		} );
+		} );
+	<!-- data tables tsv2html.pl-->   
+</script>
+
+<link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
+</head>
+<body>
+<table class="display dataTable" id="datatable" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;" > 
+<thead>
+<tr><th>
+OTU</th><th>710686226252</th><th>710686226352</th><th>710687421551</th><th>710687421651</th><th>710687421751</th><th>710687421851</th><th>710687421951</th><th>Kingdom</th><th>Phylum</th><th>Class</th><th>Order</th><th>Family</th><th>Genus</th><th>BLAST</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>  Otu0001 </td><td align="right">0</td><td align="right">2700</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Burkholderiaceae</td><td>Burkholderia</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtagggtgcaagcgttaatcggaattactgggcgtaaagcgtgcgcaggcggtccgctaagacagatgtgaaatccccgggcttaacctgggaactgcatttgtgactggcgggctagagtatggcagaggggggtagaattccacgtgtagcagtgaaatgcgtagagatgtggaggaataccgatggcgaaggcagccccctgggccaatactgacgctcatgcacgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0002 </td><td align="right">0</td><td align="right">2983</td><td align="right">125</td><td align="right">555</td><td align="right">438</td><td align="right">0</td><td align="right">654</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Bacillales</td><td>Staphylococcaceae</td><td>Staphylococcus</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtaggtggcaagcgttatccggaattattgggcgtaaagcgcgcgtaggcggttttttaagtctgatgtgaaagcccacggctcaaccgtggagggtcattggaaactggaaaacttgagtgcagaagaggaaagtggaattccatgtgtagcggtgaaatgcgcagagatatggaggaacaccagtggcgaaggcgactttctggtctgtaactgacgctgatgtgcgaaagcgtggggatcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0008 </td><td align="right">0</td><td align="right">0</td><td align="right">79</td><td align="right">300</td><td align="right">191</td><td align="right">0</td><td align="right">210</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Moraxellaceae</td><td>Moraxella</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacagagggtgcgagcgttaatcggaattactgggcgtaaagcgagtgtaggtggctcattaagtcacatgtgaaatccccgggcttaacctgggaactgcatgtgatactggtggtgctagaatatgtgagagggaagtagaattccaggtgtagcggtgaaatgcgtagagatctggaggaataccgatggcgaaggcagcttcctggcataatattgacactgagattcgaaagcgtgggtagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0012 </td><td align="right">0</td><td align="right">0</td><td align="right">66</td><td align="right">540</td><td align="right">186</td><td align="right">1</td><td align="right">266</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pasteurellales</td><td>Pasteurellaceae</td><td>Haemophilus</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacggagggtgcgagcgttaatcggaataactgggcgtaaagggcacgcaggcggttatttaagtgaggtgtgaaagccctgggcttaacctaggaattgcatttcagactgggtaactagagtactttagggaggggtagaattccacgtgtagcggtgaaatgcgtagagatgtggaggaataccgaaggcgaaggcagccccttgggaatgtactgacgctcatgtgcgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0018 </td><td align="right">0</td><td align="right">0</td><td align="right">30</td><td align="right">463</td><td align="right">163</td><td align="right">2</td><td align="right">408</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Carnobacteriaceae</td><td>Atopostipes</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtaggtgacaagcgttgtccggaattattgggcgtaaagggagcgcaggcggttggttcagtctgatgtgaaagcccacggcttaaccgtggaaggtcattggaaactgactaacttgaatgcagaagaggaaagcggaattccatgtgtagcggtgaaatgcgtagatatatggaggaacaccagtggcgaaggcggctttctggtctgttattgacgctgaggctcgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0019 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Actinobacteria_unclassified</td><td>Actinobacteria_unclassified</td><td>Actinobacteria_unclassified</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtagggtgcgagcgttgtccggaattactgggcgtaaagagctcgtaggcggtttgtcacgtcgtctgtgaaatcctagggcttaaccctggacgtgcaggcgatacgggctgacttgagtactacaggggagactggaatttctggtgtagcggtggaatgcacagatatcaggaagaacaccgatggcgaaggcaggtctctgggtagtaactgacgctgaggagcgaaagcatgggtagcgaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0024 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Burkholderiales</td><td>Burkholderiaceae</td><td>Cupriavidus</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtagggtgcgagcgttaatcggaattactgggcgtaaagcgtgcgcaggcggttttgtaagacaggcgtgaaatccccgagctcaacttgggaatggcgcttgtgactgcaaggctagagtatgtcagaggggggtagaattccacgtgtagcagtgaaatgcgtagagatgtggaggaataccgatggcgaaggcagccccctgggacgtcactgacgctcatgcacgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0028 </td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">4</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Gammaproteobacteria</td><td>Pseudomonadales</td><td>Pseudomonadaceae</td><td>Pseudomonadaceae_unclassified</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacagagggtgcaagcgttaatcggaattactgggcgtaaagcgcgcgtaggtggttcgttaagttggatgtgaaatccccgggctcaacctgggaactgcattcaaaactgacgagctagagtatggtagagggtggtggaatttcctgtgtagcggtgaaatgcgtagatataggaaggaacaccagtggcgaaggcgaccacctggactgatactgacactgaggtgcgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0031 </td><td align="right">0</td><td align="right">6</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Streptococcaceae</td><td>Streptococcus</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtaggtcccgagcgttgtccggatttattgggcgtaaagcgagcgcaggcggtttgataagtctgaagttaaaggctgtggctcaaccatagttcgctttggaaactgtcaaacttgagtgcagaaggggagagtggaattccatgtgtagcggtgaaatgcgtagatatatggaggaacaccggtggcgaaagcggctctctggtctgtaactgacgctgaggctcgaaagcgtggggagcgaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0037 </td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">5</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Alphaproteobacteria</td><td>Rhizobiales</td><td>Rhizobiales_Incertae_Sedis</td><td>Phreatobacter</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgaagggggctagcgttgttcggaatcactgggcgtaaagcgcacgtaggcggaccattaagtcaggggtgaaagcctggagctcaactccagaactgcctttgatactgatggtctcgagttcggaagaggttggtggaactgcgagtgtagaggtgaaattcgtagatattcgcaagaacaccagtggcgaaggcggccaactggtccgatactgacgctgaggtgcgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0038 </td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">3</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Corynebacteriaceae_unclassified</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtagggtgcgagcgttgtccggaattactgggcgtaaagagctcgtaggtggtttgtcgcgtcgtgtgtgaaattccggggcttaacttcggggttgcatacgatacgggcataacttgagtgctgtaggggagactggaattcctggtgtagcggtgaaatgcgcagatatcaggaggaacaccgatggcgaaggcaggtctctgggcagtaactgacgctgaggagcgaaagcatggggagcgaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0039 </td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Actinobacteria</td><td>Actinobacteria</td><td>Corynebacteriales</td><td>Corynebacteriaceae</td><td>Corynebacterium_1</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtagggtgcaagcgttgtccggaattactgggcgtaaagagctcgtaggtggtttgtcgcgtcgtctgtgaaagcccggggcttaactccgggtctgcaggcgatacgggcataactagagtgctgtaggggagactggaattcctggtgtagcggtgaaatgcgcagatatcaggaggaacaccgatggcgaaggcaggtctctgggcagtaactgacgctgaggagcgaaagcatggggagcgaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0044 </td><td align="right">0</td><td align="right">0</td><td align="right">9</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Firmicutes</td><td>Bacilli</td><td>Lactobacillales</td><td>Streptococcaceae</td><td>Streptococcus</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtaggtcccgagcgttgtccggatttattgggcgtaaagcgagcgcaggcggttttttaagtctgaagttaaaggcattggctcaaccaatgtacgctttggaaactggagaacttgagtgcagaaggggagagtggaattccatgtgtagcggtgaaatgcgtagatatatggaggaacaccggtggcgaaagcggctctctggtctgtaactgacgctgaggctcgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+<tr>
+<td>  Otu0046 </td><td align="right">0</td><td align="right">5</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td>Bacteria</td><td>Proteobacteria</td><td>Betaproteobacteria</td><td>Neisseriales</td><td>Neisseriaceae</td><td>Aquaspirillum</td><td><a target="_blank" href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?DATABASE=nr&EXCLUDE_SEQ_UNCULT=yes&FILTER=L&FORMAT_TYPE=HTML&PROGRAM=blastn&CLIENT=web&SERVICE=megablast&PAGE=Nucleotides&CMD=Web&QUERY=tacgtagggtgcaagcgttaatcggaattactgggcgtaaagggtgcgcaggcggtattgtaagccagatgtgaaatccccgggctcaacctgggaactgcgtttggaactgcaatgctagagtgtgtcagaggggggtggaattccacgtgtagcagtgaaatgcgtagagatgtggaggaacaccgatggcgaaggcagccccctgggataacactgacgctcaggcacgaaagcgtggggagcaaacagg">send to BLAST</a>
+</td></tr>
+</tbody>
+</table></body></html>
